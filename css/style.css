@@ -2180,7 +2180,7 @@ blockquote {
 
     /*-----------------Typography-----------------*/
     h1 {
-        font-size: 38px;
+        font-size: 28px !important;
     }
 
     #banner h1 {
