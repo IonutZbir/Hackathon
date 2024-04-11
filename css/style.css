@@ -336,6 +336,13 @@ section {
     margin-right: 15px;
 }
 
+#logo2 {
+    float: right;
+    height: 71px;
+    line-height: 66px;
+    margin-left: 15px;
+}
+
 #logo h1, #logo h2 {
     display: inline-block;
 }
