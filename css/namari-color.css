@@ -130,7 +130,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 @media only screen and (max-width: 1024px){
     #banner{
-        background: url("../images/banner/banner_mobile.png") no-repeat center top;
+        background: url("../images/banner/banner_clean_mobile.png") no-repeat center top;
         background-size:cover;
     }
 }
