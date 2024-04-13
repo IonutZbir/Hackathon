@@ -1,4 +1,4 @@
-- Challenge algoritmica rivoltRisolvere almeno 2 problemia a tutti gli studenti della facoltà di Informatica Tor Vergata, che metterà a dura prova le vostre capacità di Problem Solving e Programmazione Python.
+- Challenge algoritmica rivoltà a tutti gli studenti della facoltà di Informatica Tor Vergata, che metterà a dura prova le vostre capacità di Problem Solving e Programmazione Python.
 
 - Non importa se sei del primo, secondo o del terzo anno, ci saranno problemi che sicuramente sarai in grado di risolvere.
 
