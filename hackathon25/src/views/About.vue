@@ -1,3 +1,5 @@
+<script setup>
+</script>
 <template>
-    <p>ABOUT PAGE</p>
+    dasdsad
 </template>

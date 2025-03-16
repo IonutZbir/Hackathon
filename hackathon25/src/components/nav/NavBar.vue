@@ -1,5 +1,6 @@
 <script setup>
 import NavBarElement from './NavBarElement.vue';
+import LogoNavBar from './LogoNavBar.vue';
 </script>
 
 <template>
@@ -13,7 +14,9 @@ import NavBarElement from './NavBarElement.vue';
     <header class="header_section">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                <!-- COMPONENTE LOGO CON LINK ALLA HOME PAGE-->
+                
+                <LogoNavBar/>
+
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -23,17 +26,17 @@ import NavBarElement from './NavBarElement.vue';
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class=""> </span>
+                <span class=""> </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav">
                         <NavBarElement page-name="Home" page-link="/" />
-                        <NavBarElement page-name="About" page-link="/about" />
-                        <NavBarElement page-name="Services" page-link="/services" />
-                        <NavBarElement page-name="Why Us" page-link="/why" />
-                        <NavBarElement page-name="Team" page-link="/team" />
-                        <NavBarElement page-name="Login" page-link="/login" />
+                        <NavBarElement page-name="Chi Siamo" page-link="/about" />
+                        <NavBarElement page-name="Requisiti" page-link="/requiments" />
+                        <NavBarElement page-name="Registrati" page-link="/register" />
+                        <NavBarElement page-name="Crea Squadra" page-link="/create" />
+                        <NavBarElement page-name="Squadra" page-link="/access" />
                     </ul>
                 </div>
             </nav>

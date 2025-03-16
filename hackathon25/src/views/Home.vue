@@ -1,3 +1,8 @@
+<script setup>
+import HeroArea from '@/components/HeroArea.vue';
+
+</script>
+
 <template>
-    <p>HOME PAGE</p>
+    <HeroArea />
 </template>
