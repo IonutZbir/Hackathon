@@ -6,13 +6,8 @@
   .hero_area {
     min-height: auto;
   }
-
-  .hero_area {
-    background: linear-gradient(130deg, #231a6f, #0f054c);
-  }
-
-  .hero_area .hero_bg_box {
-    display: none;
+  .wave {
+    bottom: -3%;
   }
 
   .slider_section {
@@ -38,13 +33,19 @@
     margin-bottom: 45px;
   }
 
+  .wave {
+    bottom: -3%;
+  }
 }
 
 @media (max-width: 576px) {
   .header_section .header_top .contact_nav a span {
     display: none;
   }
-
+  
+  .wave {
+    bottom: 0;
+  }
 
   .client_section .client_container {
     width: 100%;
