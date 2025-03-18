@@ -170,6 +170,9 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 20px;
   color: #ffffff;
   text-align: center;
@@ -939,4 +942,27 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+
+#countdown {
+  user-select: none;
+  -webkit-user-select: none;
+  color: gray;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 0;
+  line-height: 2;
+  opacity: 0;
+  justify-self: center;
+  transition-duration: 0.2s;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:hover > #countdown {
+  opacity: 1;
+  line-height: 4.5;
+  height: 100%;
+}

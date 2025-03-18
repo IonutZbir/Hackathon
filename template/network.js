@@ -95,7 +95,7 @@ function network() {
         density: 15000, // the lower the denser
         netLineDistance: 200,
         netLineColor: "#929292",
-        particleColors: ["#aaa"] // ['#6D4E5C', '#aaa', '#FFC458' ]
+        particleColors: ["#aaa"]
       };
       this.canvas = parent.canvas;
       this.ctx = parent.ctx;
@@ -133,7 +133,7 @@ function network() {
             }
             counter++;
           }.bind(this),
-          2//50
+          2
         );
       } else {
         // Create particle objects
@@ -206,7 +206,6 @@ function network() {
             this.ctx.stroke();
           }
         }
-  
         // Draw particles
         for (var i = 0; i < this.particles.length; i++) {
           this.particles[i].update();

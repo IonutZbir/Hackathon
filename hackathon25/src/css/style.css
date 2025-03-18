@@ -316,6 +316,7 @@ a:focus {
 }
 
 .slider_section .detail-box .btn-box .btn1 {
+  user-select: none;
   display: inline-block;
   padding: 10px 15px;
   background-color: #00bbf0;
