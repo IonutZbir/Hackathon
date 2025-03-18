@@ -1,6 +1,9 @@
 <script setup>
-import LogoNavBar from '@/components/nav/LogoNavBar.vue';
+import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
+import AboutComponent from '@/components/AboutComponent.vue';
+
 </script>
 <template>
-    <LogoNavBar/>
+    <StandaloneNavbar bg-color="#433194"/>
+    <AboutComponent />    
 </template>
