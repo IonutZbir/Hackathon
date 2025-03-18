@@ -1,5 +1,6 @@
 <script setup>
+import LogoNavBar from '@/components/nav/LogoNavBar.vue';
 </script>
 <template>
-    dasdsad
+    <LogoNavBar/>
 </template>
