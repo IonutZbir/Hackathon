@@ -8,9 +8,18 @@
 							<div class="col-md-6">
 								<div class="detail-box">
 									<h1>
-										Hackathon25
+										<p id="H">H</p>
+										<p id="A">A</p>
+										<p id="C">C</p>
+										<p id="K">K</p>
+										<p id="A1">A</p>
+										<p id="T">T</p>
+										<p id="H1">H</p>
+										<p id="O">O</p>
+										<p id="N">N</p>
+										<p id="L25">25</p>
 									</h1>
-                                    <p>Powered By Lab25A</p>
+                                    <p class="power">Powered By Lab25A</p>
 									<p>
 										Explicabo esse amet tempora quibusdam
 										laudantium, laborum eaque magnam fugiat
@@ -21,7 +30,7 @@
 										sequi.
 									</p>
 									<div class="btn-box">
-										<a href="" class="btn1"> Iscriviti </a>
+										<a href="" class="btn1">ISCRIVITI</a>
 									</div>
 								</div>
 							</div>
