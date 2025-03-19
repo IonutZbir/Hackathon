@@ -2,7 +2,6 @@
  * Particle Network Animation
  * Inspiration: https://github.com/JulianLaval/canvas-particle-network
  */
-window.onload = network;
 
 function network() {
     var ParticleNetworkAnimation, PNA;
@@ -344,5 +343,6 @@ function network() {
     var pna = new ParticleNetworkAnimation();
     var a = $(".particle-network-animation")[0]
     pna.init(a);
-  }
-  
+}
+
+export {network};

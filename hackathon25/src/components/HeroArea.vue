@@ -3,11 +3,12 @@
     import "@/css/bootstrap.css";
     import "@/css/network.css";
     import "@/css/responsive.css";
-    import $ from "jquery";
-    import "@/../js/network.js";
-    // import "@/../js/bootstrap.js";
     import Carousel from './Carousel.vue';
     import NavBar from './nav/NavBar.vue';
+    
+    import {network} from "@/../js/network"
+    import { onMounted } from "vue";
+    onMounted(() => {network();})
 </script>
 <template>
     <div class="hero_area">
