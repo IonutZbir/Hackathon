@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import InteractiveButton from './InteractiveButton.vue';
 
 </script>
@@ -34,7 +34,7 @@ import InteractiveButton from './InteractiveButton.vue';
 										veritatis delectus repellat modi impedit
 										sequi.
 									</p>
-									<InteractiveButton/>
+									<InteractiveButton text="ISCRIVITI"/>
 								</div>
 							</div>
 							<div class="col-md-6">

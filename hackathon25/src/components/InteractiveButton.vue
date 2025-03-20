@@ -1,29 +1,41 @@
+
+<script setup>
+
+    import { defineProps } from "vue";
+    const props = defineProps({
+        text: {
+            type: String,
+            required: true,
+            default: "BOTTONE"
+        }
+        });
+</script>
+
 <template>    
-    <div class="button-box"><a class="inner-button-text">ISCRIVITI</a></div>
+    <div class="button-box"><a class="inner-button-text"> {{props.text}} </a></div>
 </template>
+
 <style>
-    .button-box {
+
+    .inner-button-text {
+        position: absolute;
         user-select: none;
         padding: 10px 15px;
+        font-size: 1.2em;
         background-color: #3F8FDA;
         color: #ffffff;
-        border-radius: 0;
         -webkit-transition: all 0.3s;
         transition: all 0.3s;
         font-weight: bold;
         border-radius: 4px;
-        border: none;
         -webkit-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.2); 
         box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.2);
     }
-    .button-box {
-        
-    }
-/*
-    .btn1:hover {
+
+    .inner-button-text:hover {
         background-color: #3479ba;
+        color: #EEEEEE;
         -webkit-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1); 
         box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1);
-}
-*/
+    }
 </style>

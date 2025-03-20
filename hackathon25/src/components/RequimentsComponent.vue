@@ -1,3 +1,8 @@
+<script setup>
+import InteractiveButton from './InteractiveButton.vue';
+
+</script>
+
 <template>
     <section class="service_section layout_padding">
     <div class="service_container">
@@ -72,10 +77,8 @@
             </div>
           </div>
         </div>
-        <div class="btn-box">
-          <a href="" class="btn1">
-            Vedi tutto
-          </a>
+        <div style="position: absolute;">
+        <InteractiveButton text="Vedi tutto"/>
         </div>
       </div>
     </div>
