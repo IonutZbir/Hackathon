@@ -3,7 +3,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 
 .layout_padding {
@@ -111,8 +110,8 @@ a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  overflow: hidden;
-  z-index: -1;
+  /* overflow: hidden; */
+  /* z-index: -1; */
 }
 
 .bg_img_box {
@@ -120,7 +119,7 @@ a:focus {
   height: 100vh;
   background: radial-gradient(circle at top left, #201847, #433194);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .wave{
   position: absolute;
@@ -294,6 +293,7 @@ a:focus {
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #ffffff;
+  overflow: visible;
 }
 
 .slider_section .detail-box {
@@ -516,16 +516,16 @@ h1 > p {
 
 @keyframes sineLetters {
   0% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-15px) rotateZ(3deg);
+            transform: translateY(-15px) rotateZ(3deg);;
   }
   50% {
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    -webkit-transform: translateY(15px) rotateZ(-3deg);
+            transform: translateY(15px) rotateZ(-3deg);
   }
   100% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+    -webkit-transform: translateY(-15px) rotateZ(3deg);
+            transform: translateY(-15px) rotateZ(3deg);
   }
 }
 
@@ -775,7 +775,7 @@ h1 > p {
 .team_section .team_container .box {
   padding: 35px 0 0 0;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   -webkit-transition: all .1s;
   transition: all .1s;
   margin-top: 45px;
@@ -1088,4 +1088,5 @@ h1 > p {
 .footer_section p a {
   color: inherit;
 }
+
 /*# sourceMappingURL=style.css.map */

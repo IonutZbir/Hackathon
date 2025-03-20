@@ -73,8 +73,8 @@
           </div>
         </div>
         <div class="btn-box">
-          <a href="">
-            View All
+          <a href="" class="btn1">
+            Vedi tutto
           </a>
         </div>
       </div>

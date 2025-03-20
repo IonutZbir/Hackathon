@@ -9,8 +9,11 @@
     import {network} from "@/../js/network"
     import { onMounted } from "vue";
     onMounted(() => {network();})
+    import InteractiveButton from "./InteractiveButton.vue";
+
 </script>
 <template>
+    <InteractiveButton/>
     <div class="hero_area">
         <NavBar />
         <Carousel />

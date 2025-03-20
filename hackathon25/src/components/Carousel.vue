@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import InteractiveButton from './InteractiveButton.vue';
+
+</script>
+
 <template>
 	<section class="slider_section">
 		<div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -29,9 +34,7 @@
 										veritatis delectus repellat modi impedit
 										sequi.
 									</p>
-									<div class="btn-box">
-										<a href="" class="btn1">ISCRIVITI</a>
-									</div>
+									<InteractiveButton/>
 								</div>
 							</div>
 							<div class="col-md-6">
