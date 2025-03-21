@@ -15,6 +15,9 @@
     });
 </script>
 
+<style>
+</style>
+
 <template>
     <div class="col-md-4">
         <div class="box ">

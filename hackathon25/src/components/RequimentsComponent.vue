@@ -5,6 +5,9 @@ import InteractiveButton from './InteractiveButton.vue';
 </script>
 
 <style>
+.service_section h2, .service_section #requiremets-text{
+  color: #ffffff;
+}
 .button-center {
   width: 100%; 
   height: 100%;
@@ -24,7 +27,7 @@ import InteractiveButton from './InteractiveButton.vue';
           <h2>
             Requisiti
           </h2>
-          <p>
+          <p id="requiremets-text">
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
           </p>
         </div>
