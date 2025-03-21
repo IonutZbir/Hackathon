@@ -13,7 +13,6 @@
 
 </script>
 <template>
-    <InteractiveButton/>
     <div class="hero_area">
         <NavBar />
         <Carousel />

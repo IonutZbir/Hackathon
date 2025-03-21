@@ -1,7 +1,20 @@
 <script setup>
+import Card from '@/widgets/card.vue';
 import InteractiveButton from './InteractiveButton.vue';
 
 </script>
+
+<style>
+.button-center {
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+</style>
+
 
 <template>
     <section class="service_section layout_padding">
@@ -16,69 +29,12 @@ import InteractiveButton from './InteractiveButton.vue';
           </p>
         </div>
         <div class="row">
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="@/images/s1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Currency Wallet
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="@/images/s2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Security Storage
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="box ">
-              <div class="img-box">
-                <img src="@/images/s3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Expert Support
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                  The
-                  point of using
-                </p>
-                <a href="">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
+          <Card title="Titolo 1" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s1.png"/>
+          <Card title="Titolo 2" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s2.png"/>
+          <Card title="Titolo 3" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s3.png"/>
         </div>
-        <div style="position: absolute;">
-        <InteractiveButton text="Vedi tutto"/>
+        <div class="button-center">
+          <InteractiveButton text="Vedi tutto"/>
         </div>
       </div>
     </div>

@@ -18,9 +18,8 @@
 <style>
 
     .inner-button-text {
-        position: absolute;
         user-select: none;
-        padding: 10px 15px;
+        padding: 12px 27px;
         font-size: 1.2em;
         background-color: #3F8FDA;
         color: #ffffff;
