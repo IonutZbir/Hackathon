@@ -33,7 +33,7 @@
 :root {
     --vertical: 10;
     --horizontal: 6;
-    --size: 23vw;
+    --size: 400px;
     --v-size: calc(267 / 400 * var(--size) * 267/400);
     --margin: 5px;
     --opacity: 1;
@@ -46,6 +46,7 @@
 }
 
 .mask {
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
     animation: animazione 35s linear infinite;

@@ -362,7 +362,7 @@ a:focus {
 /* ANIMAZIONE LETTERE HACKATHON25 2sec*/
 
 h1 > p {
-  font-size: 1em;
+  font-size: 1.2em;
   display: inline-block;
   animation: ease-in-out sineLetters 2.5s infinite;
   -webkit-animation: ease-in-out sineLetters 2.5s infinite;

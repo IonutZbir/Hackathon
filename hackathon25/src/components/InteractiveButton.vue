@@ -1,7 +1,5 @@
 
 <script setup>
-
-    import { defineProps } from "vue";
     const props = defineProps({
         text: {
             type: String,
@@ -16,7 +14,9 @@
 </template>
 
 <style>
-
+    .button-box {
+        margin-top: 40px;
+    }
     .inner-button-text {
         cursor: pointer;
         user-select: none;
