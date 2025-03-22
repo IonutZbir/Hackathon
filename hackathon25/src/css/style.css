@@ -901,7 +901,7 @@ h1 > p {
 
 .power {
   font-weight: bold;
-  opacity: 0.6;
+  color: rgba(255,255,255,0.6);
 }
 
 .client_section .owl-carousel .owl-nav {
