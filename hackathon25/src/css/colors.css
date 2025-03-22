@@ -1,0 +1,6 @@
+:root{
+    --main_color: #433194;
+    --second_color: #201847;
+    --action_color: #3F8FDA;
+    --gradiente: radial-gradient(circle at top left, var(--second_color), var(--main_color));
+}   

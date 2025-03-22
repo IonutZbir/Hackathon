@@ -83,7 +83,7 @@ a:focus {
 }
 
 /*header section*/
-.hero_area {
+/* .hero_area {
   position: relative;
   min-height: 100vh;
   display: -webkit-box;
@@ -93,9 +93,9 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
+} */
 
-.hero_area .hero_bg_box {
+/* .hero_area .hero_bg_box {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,8 +110,6 @@ a:focus {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  /* overflow: hidden; */
-  /* z-index: -1; */
 }
 
 .bg_img_box {
@@ -119,14 +117,13 @@ a:focus {
   height: 100vh;
   background: radial-gradient(circle at top left, #201847, #433194);
   position: relative;
-  /* overflow: hidden; */
 }
 .wave{
   position: absolute;
   bottom: -7.2%;
-}
+} */
 
-.hero_area .hero_bg_box .bg_img_box {
+/* .hero_area .hero_bg_box .bg_img_box {
   min-width: 100%;
   min-height: 100%;
 }
@@ -134,7 +131,7 @@ a:focus {
 .hero_area .hero_bg_box img {
   min-width: 100%;
   min-height: 100%;
-}
+} */
 
 .sub_page .hero_area {
   min-height: auto;
@@ -256,7 +253,7 @@ a:focus {
   top: 0;
 }
 
-/*end header section*/
+/*end header section1*/
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
@@ -352,6 +349,15 @@ a:focus {
   background-color: black;
 }
 
+.slider_section .img-box {
+  margin: 45px 0;
+}
+
+.slider_section .img-box img {
+  width: 100%;
+  -webkit-animation: upDown 5s infinite;
+          animation: upDown 5s infinite;
+}
 
 /* ANIMAZIONE LETTERE HACKATHON25 2sec*/
 
@@ -474,15 +480,7 @@ h1 > p {
 
 }
 */
-.slider_section .img-box {
-  margin: 45px 0;
-}
 
-.slider_section .img-box img {
-  width: 100%;
-  -webkit-animation: upDown 5s infinite;
-          animation: upDown 5s infinite;
-}
 
 @-webkit-keyframes upDown {
   0% {
@@ -554,7 +552,7 @@ h1 > p {
   background-color: #00bbf0;
 }
 
-.service_section {
+/* .service_section {
   position: relative;
 }
 
@@ -636,9 +634,9 @@ h1 > p {
 
 .service_section .btn-box a:hover {
   background-color: #007fa4;
-}
+} */
 
-.about_section {
+/* .about_section {
   background-color: #00204a;
   color: #ffffff;
 }
@@ -679,7 +677,7 @@ h1 > p {
 
 .about_section .detail-box a:hover {
   background-color: #007fa4;
-}
+} */
 
 .why_section .box {
   margin-top: 45px;

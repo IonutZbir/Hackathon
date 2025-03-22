@@ -7,8 +7,6 @@ function network() {
     var ParticleNetworkAnimation, PNA;
     ParticleNetworkAnimation = PNA = function () {};
     
-
-
     PNA.prototype.init = function (element) {
       this.$el = $(element);
   

@@ -1,6 +1,7 @@
 <script setup>
 import LogoNavBar from './LogoNavBar.vue';
 import NavBarElement from './NavBarElement.vue';
+import { hamburgerMenu } from '../../../js/utils';
 
 const props = defineProps({
     bgColor: {
@@ -9,28 +10,26 @@ const props = defineProps({
     }
 })
 
+import { onMounted } from "vue";
+
+onMounted(() => {hamburgerMenu();})
+
 </script>
 <template>
-<!-- header section strats -->
-<header class="header_section" :style="{ backgroundColor: bgColor }">
+    <!-- header section strats -->
+    <header class="header_section" :style="{ backgroundColor: bgColor }">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-                
-                <LogoNavBar/>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                <span class=""> </span>
+                <LogoNavBar />
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""> </span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <NavBarElement page-name="Home" page-link="/" />
                         <NavBarElement page-name="Chi Siamo" page-link="/about" />

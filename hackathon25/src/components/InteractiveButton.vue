@@ -18,6 +18,7 @@
 <style>
 
     .inner-button-text {
+        cursor: pointer;
         user-select: none;
         padding: 12px 27px;
         font-size: 1.2em;
