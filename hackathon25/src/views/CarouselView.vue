@@ -48,7 +48,7 @@
 .mask {
     display: flex;
     flex-direction: row;
-    animation: animazione 1s linear infinite;
+    animation: animazione 35s linear infinite;
 }
 
 .mask:hover {
