@@ -36,7 +36,8 @@ function network() {
   
     PNA.prototype.sizeCanvas = function () {
       this.canvas.width = this.container.offsetWidth;
-      this.canvas.height = this.container.offsetHeight;
+      // TODO: FIX 
+      this.canvas.height = 3600;
     };
   
     var Particle = function (parent, x, y) {
