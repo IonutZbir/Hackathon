@@ -9,12 +9,12 @@ window.$ = jQuery
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importa Bootstrap JS
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUser, faPlus, faUsers, faLocationDot, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faUser, faPlus, faUsers, faLocationDot, faEnvelope, faGlobe} from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 
-library.add(faUser, faPlus, faUsers, faLocationDot, faEnvelope, faInstagram, faGithub);
+library.add(faUser, faPlus, faUsers, faLocationDot, faEnvelope, faInstagram, faGithub, faGlobe);
 
 const app = createApp(App);
 

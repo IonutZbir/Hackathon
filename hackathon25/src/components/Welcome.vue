@@ -39,7 +39,8 @@ import InteractiveButton from './InteractiveButton.vue';
 							</div>
 							<div class="col-md-6">
 								<div class="img-box">
-									<img src="@/images/slider-img.png" alt="" />
+									<!-- QUI CI VA IL LOGO-->
+									<!-- <img src="@/images/slider-img.png" alt="" /> -->
 								</div>
 							</div>
 						</div>

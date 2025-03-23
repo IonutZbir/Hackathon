@@ -32,7 +32,7 @@ onMounted(() => {hamburgerMenu();})
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <NavBarElement page-name="Home" page-link="/" />
-                        <NavBarElement page-name="Chi Siamo" page-link="/about" />
+                        <NavBarElement page-name="Info" page-link="/about" />
                         <NavBarElement page-name="Requisiti" page-link="/requiments" />
                         <NavBarElement page-name="Registrati" page-link="/register" />
                         <NavBarElement page-name="Crea Squadra" page-link="/create" />

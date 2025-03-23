@@ -5,22 +5,22 @@ import InteractiveButton from './InteractiveButton.vue';
 </script>
 
 <style>
-.requiments_section h2, .requiments_section #requiremets-text{
+.requiments_section h2,
+.requiments_section #requiremets-text {
   color: #ffffff;
 }
+
 .button-center {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-top: 20px;
 }
-
 </style>
 
-
 <template>
-    <section class="requiments_section layout_padding">
+  <section class="requiments_section layout_padding">
     <div class="requiments_container">
       <div class="container ">
         <div class="heading_container heading_center">
@@ -28,16 +28,22 @@ import InteractiveButton from './InteractiveButton.vue';
             Requisiti
           </h2>
           <p id="requiremets-text">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            Come tutti gli anni, sono richieste delle minime compentenze per essere in grado di competere.
           </p>
         </div>
         <div class="row">
-          <Card title="Titolo 1" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s1.png"/>
-          <Card title="Titolo 2" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s2.png"/>
-          <Card title="Titolo 3" description="fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using " immagine="src/images/s3.png"/>
+          <Card title="Python"
+            description="Per partecipare all'Hackathon è richiesta una conoscenza di base di Python. Questo requisito è alla portata di tutti, dato che nel primo semestre avete seguito il corso di programmazione."
+            immagine="src/images/python-logo-only.svg" more-desc="How To Python" more-link="https://www.python.org//" />
+          <Card title="Programmazione Web"
+            description="Per affrontare le sfide dell'Hackathon, è utile avere una conoscenza di base della programmazione web. Comprendere l'HTML, il CSS e il JavaScript ti permetterà di sviluppare soluzioni interattive e dinamiche."
+            immagine="" />
+          <Card title="Capacità di Problem Solving"
+            description="Il problem solving è una competenza fondamentale per ogni sviluppatore. Durante l'Hackathon, dovrai analizzare problemi complessi, trovare soluzioni efficienti e implementarle nel modo più ottimale possibile."
+            immagine="" />
         </div>
         <div class="button-center">
-          <InteractiveButton text="Vedi tutto"/>
+          <InteractiveButton text="Vedi tutto" />
         </div>
       </div>
     </div>
@@ -55,11 +61,11 @@ import InteractiveButton from './InteractiveButton.vue';
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   margin-top: 45px;
   background-color: #f8f8f9;
@@ -72,11 +78,11 @@ import InteractiveButton from './InteractiveButton.vue';
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 125px;
   min-width: 75px;
   height: 75px;

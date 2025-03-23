@@ -4,12 +4,14 @@ import { onMounted } from 'vue';
 onMounted(() => { getYear(); })
 </script>
 
+<!--TODO: allinea i link ai social, quello che ti ho fatto vedere su telegram, pls-->
+
 <template>
     <footer class="footer">
         <section class="info_section layout_padding2">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 info_col">
+                    <div class="col-md-3 info_col">
                         <div class="info_contact">
                             <h4>
                                 Dove Siamo
@@ -41,31 +43,97 @@ onMounted(() => { getYear(); })
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-2 info_col">
+                    <div class="col-md-3 info_col">
                         <div class="info_detail">
                             <h4>
                                 Organizzatori
                             </h4>
                             <div class="info_links">
-                                <a href="index.html">
-                                    Prof. Pasquale
-                                </a>
-                                <a class="" href="about.html">
-                                    Prof. Zanzotto
-                                </a>
-                                <a class="" href="service.html">
-                                    Giorgia Pazienza
-                                </a>
-                                <a class="" href="why.html">
-                                    Franco Salvucci
-                                </a>
-                                <a class="" href="team.html">
-                                    Benito Mussolini
-                                </a>
+                                <div class="org_social">
+                                    <span>Giorgia Pazienza</span>
+                                    <a href="https://www.instagram.com/giorgiapazienza_" target="_blank">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Davide Noce</span>
+                                    <a href="https://www.instagram.com/davide.nox" target="_blank">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/davidenox" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Francesco Cosciotti</span>
+                                    <a href="https://www.instagram.com/why_must_i_be_sad" target="_blank">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/Gjiha" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 info_col">
+                    <div class="col-md-3 info_col">
+                        <div class="info_detail">
+                            <h4>
+                                Collaboratori
+                            </h4>
+                            <div class="info_links">
+                                <div class="org_social">
+                                    <span>Prof. Francesco Pasquale</span>
+                                    <a href="mailto:pasquale@mat.uniroma2.it" target="_blank">
+                                        <font-awesome-icon icon="fa fa-envelope" />
+                                    </a>
+                                    <a href="https://www.mat.uniroma2.it/~pasquale/" target="_blank">
+                                        <font-awesome-icon icon="fa fa-globe" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Prof. Fabio Massimo Zanzzoto</span>
+                                    <a href="mailto:fabio.massimo.zanzotto@uniroma2.it" target="_blank">
+                                        <font-awesome-icon icon="fa fa-envelope" />
+                                    </a>
+                                    <a href="https://art.uniroma2.it/zanzotto/" target="_blank">
+                                        <font-awesome-icon icon="fa fa-globe" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Mirco Pasquali</span>
+                                    <a href="">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/mirco0" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Franco Salvucci</span>
+                                    <a href="https://www.instagram.com/franco.salvucci.9" target="_blank">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/francosalvucci14" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
+                                <div class="org_social">
+                                    <span>Ionut Zbirciog</span>
+                                    <a href="">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/IonutZbir" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 info_col">
                         <div class="info_detail">
                             <h4>
                                 Sponsor
@@ -105,6 +173,14 @@ onMounted(() => { getYear(); })
 </template>
 
 <style>
+.org_social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
 .info_section {
     background-color: var(--second_color);
     color: #ffffff;

@@ -1,46 +1,55 @@
 <script setup>
-
-import CarouselView from '@/views/CarouselView.vue';
-
+import CarouselView from "@/views/CarouselView.vue";
 </script>
 <template>
   <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h1 class="roboto_font_500">Chi <span style="color: #3f8fda">Siamo</span></h1>
-        <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum
-          quisquam aspernatur ullam vel beatae rerum ipsum
-          voluptatibus
-        </p>
-        <CarouselView/>
+        <h1 class="roboto_font_500">
+          INFO HACKATHON<span style="color: var(--action_color)">25</span>
+        </h1>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="@/images/Lab25a.svg" alt="" />
-          </div>
+        <div class="col-3">
+          <h2>Cos'è l'Hackathon</h2>
+          <p>
+            L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti
+            nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica
+            per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove
+            tecnologie in un ambiente dinamico e stimolante.
+          </p>
+          <p>
+            Questa competizione è destinata agli studenti del corso di laurea triennale in Informatica di Roma Tor
+            Vergata e si svolgerà in formato a
+            squadre, con un massimo di 4 partecipanti per team. L'evento inizierà nel pomeriggio di venerdì e terminerà
+            il sabato mattina, dando ai partecipanti il tempo di impegnarsi intensamente nel risolvere le sfide.
+          </p>
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <h3>Siamo i ragazzi del laboratorio 25A</h3>
-            <p>
-              There are many variations of passages of Lorem Ipsum
-              available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised
-              words which don't look even slightly believable. If
-              you are going to use a passage of Lorem Ipsum, you
-              need to be sure there isn't anything embarrassing
-              hidden in the middle of text. All
-            </p>
-            <p>
-              Molestiae odio earum non qui cumque provident
-              voluptates, repellendus exercitationem, possimus at
-              iste corrupti officiis unde alias eius ducimus
-              reiciendis soluta eveniet. Nobis ullam ab omnis
-              quasi expedita.
-            </p>
-          </div>
+        <div class="col-3">
+          <h2>CFU D</h2>
+          <p>
+            Un aspetto interessante dell'Hackathon è che offre un'opportunità per ottenere Crediti Formativi
+            Universitari (CFU). I CFU di tipo D sono crediti aggiuntivi per attività extra-curriculari, e per laurearsi
+            sono necessari 9 CFU di questo tipo. Partecipando all'Hackathon, avrai la possibilità di guadagnarne uno. Un
+            CFU corrisponde a 25 ore di impegno, e per ottenerlo dovrai partecipare per almeno 6 ore e risolvere 3
+            problemi.</p>
+        </div>
+        <div class="col-3">
+          <h2>Premi</h2>
+          <p>
+            I premi per i vincitori saranno suddivisi in base alla classifica (primo, secondo e terzo posto) e
+            consisteranno in premi materiali, che verranno annunciati più avanti.
+          </p>
+        </div>
+        <div class="col-3">
+          <h2>Problemi</h2>
+          <p>
+            Durante l'Hackathon, affronterai una serie di problemi di algoritmici pensati per mettere alla prova le
+            tue abilità logiche, algoritmiche e creative. I problemi saranno strutturati su diversi livelli di
+            difficoltà, permettendo a tutti, dai studenti del primo anno agli studenti più anziani, di partecipare
+            attivamente e trovare
+            soluzioni innovative, migliorando le proprie competenze nel campo della programmazione e del problem solving.
+          </p>
         </div>
       </div>
     </div>
@@ -74,7 +83,7 @@ import CarouselView from '@/views/CarouselView.vue';
   margin-top: 15px;
 }
 
-/*IN CASO DI LINK*/ 
+/*IN CASO DI LINK*/
 /* .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
