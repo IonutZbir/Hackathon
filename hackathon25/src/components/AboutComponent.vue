@@ -13,12 +13,6 @@ import CarouselView from "@/views/CarouselView.vue";
         <div class="col-3">
           <h2>Cos'è l'Hackathon</h2>
           <p>
-            L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti
-            nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica
-            per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove
-            tecnologie in un ambiente dinamico e stimolante.
-          </p>
-          <p>
             Questa competizione è destinata agli studenti del corso di laurea triennale in Informatica di Roma Tor
             Vergata e si svolgerà in formato a
             squadre, con un massimo di 4 partecipanti per team. L'evento inizierà nel pomeriggio di venerdì e terminerà

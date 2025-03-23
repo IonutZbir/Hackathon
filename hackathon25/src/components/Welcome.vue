@@ -26,13 +26,7 @@ import InteractiveButton from './InteractiveButton.vue';
 									</h1>
                                     <p class="power">Powered By Lab25A</p>
 									<p>
-										Explicabo esse amet tempora quibusdam
-										laudantium, laborum eaque magnam fugiat
-										hic? Esse dicta aliquid error
-										repudiandae earum suscipit fugiat
-										molestias, veniam, vel architecto
-										veritatis delectus repellat modi impedit
-										sequi.
+										L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove tecnologie in un ambiente dinamico e stimolante. 
 									</p>
 									<InteractiveButton text="ISCRIVITI"/>
 								</div>
