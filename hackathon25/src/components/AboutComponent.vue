@@ -56,6 +56,10 @@ import CarouselView from "@/views/CarouselView.vue";
   </section>
 </template>
 <style>
+
+.about_section col-3 {
+  height: 100%;
+}
 .about_section {
   background-color: white;
   color: var(--main_color);
@@ -65,11 +69,6 @@ import CarouselView from "@/views/CarouselView.vue";
   margin-bottom: 45px;
 }
 
-.about_section .row {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
 
 .about_section .img-box img {
   max-width: 100%;

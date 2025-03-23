@@ -130,6 +130,15 @@ onMounted(() => { getYear(); })
                                         <font-awesome-icon icon="fab fa-github" />
                                     </a>
                                 </div>
+                                <div class="org_social">
+                                    <span>Francesco Compagnone</span>
+                                    <a href="">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,19 +149,19 @@ onMounted(() => { getYear(); })
                             </h4>
                             <div class="info_links">
                                 <a href="index.html">
-                                    Redbull
+                                    <!-- Redbull -->
                                 </a>
                                 <a class="" href="about.html">
-                                    BOH
+                                    <!-- BOH -->
                                 </a>
                                 <a class="" href="service.html">
-                                    BOH
+                                    <!-- BOH -->
                                 </a>
                                 <a class="" href="why.html">
-                                    BOH
+                                    <!-- BOH -->
                                 </a>
                                 <a class="" href="team.html">
-                                    BOH
+                                    <!-- BOH -->
                                 </a>
                             </div>
                         </div>
@@ -173,11 +182,17 @@ onMounted(() => { getYear(); })
 </template>
 
 <style>
+
+.footer span {
+    width: 100%;
+}
+
 .org_social {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 5px 0;
+    width: 80%;
 }
 
 
@@ -266,7 +281,7 @@ onMounted(() => { getYear(); })
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     color: #ffffff;
 }
 

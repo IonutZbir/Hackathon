@@ -8,9 +8,8 @@ body {
 .roboto_font_500 {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: bold;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   font-size: 4rem;
 }
 
@@ -279,6 +278,7 @@ a:focus {
 }
 
 .slider_section .row {
+  height: 600px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
