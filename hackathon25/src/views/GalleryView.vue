@@ -59,9 +59,8 @@ import CarouselView from './CarouselView.vue';
 
 <style>
 
-.gallery-view {
-  /* z-index: 2; */
-  /* position: relative; */
+.title2 {
+  margin-left: 22.5%;
 }
 img {
   border-radius: 12px;
