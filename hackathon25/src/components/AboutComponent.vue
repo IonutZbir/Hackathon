@@ -1,3 +1,8 @@
+<script setup>
+
+import CarouselView from '@/views/CarouselView.vue';
+
+</script>
 <template>
   <section class="about_section layout_padding">
     <div class="container">
@@ -8,6 +13,7 @@
           quisquam aspernatur ullam vel beatae rerum ipsum
           voluptatibus
         </p>
+        <CarouselView/>
       </div>
       <div class="row">
         <div class="col-md-6">

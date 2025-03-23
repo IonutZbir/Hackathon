@@ -25,6 +25,14 @@
                 <img class="carousel-image"          src="../images/H2024/4.jpg">
                 <img class="carousel-image"          src="../images/H2024/5.jpg">
                 <img class="carousel-image"          src="../images/H2024/6.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/7_.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/8_.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/9_.jpg">
+                <img class="carousel-image"          src="../images/H2024/10.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/11_.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/12_.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/13_.jpg">
+                <img class="carousel-image vertical" src="../images/H2024/15_.jpg">
             </div>
         </div>
 </template>
@@ -56,6 +64,7 @@
     animation-play-state: paused;
 }
 .carousel {
+    width: 100vw;
     overflow: hidden;
     mask-image: linear-gradient(90deg, rgba(0,0,0,var(--opacity)) 8%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 72%, rgba(0,0,0,var(--opacity)) 92%);  
 }
