@@ -7,7 +7,7 @@ import CarouselView from '@/views/CarouselView.vue';
   <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>Chi <span style="color: #3f8fda">Siamo</span></h2>
+        <h1 class="roboto_font_500">Chi <span style="color: #3f8fda">Siamo</span></h1>
         <p>
           Magni quod blanditiis non minus sed aut voluptatum illum
           quisquam aspernatur ullam vel beatae rerum ipsum

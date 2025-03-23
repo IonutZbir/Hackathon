@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap");
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+}
+
+.roboto_font_500 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 6vh;
 }
 
 .layout_padding {
@@ -934,7 +942,7 @@ h1 > p {
 }
 
 /* client section end */
-.info_section {
+/* .info_section {
   background-color: #00204a;
   color: #ffffff;
   padding: 45px 0 15px 0;
@@ -1071,7 +1079,6 @@ h1 > p {
   background-color: #007fa4;
 }
 
-/* footer section*/
 .footer_section {
   position: relative;
   background-color: #ffffff;
@@ -1086,6 +1093,6 @@ h1 > p {
 
 .footer_section p a {
   color: inherit;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
