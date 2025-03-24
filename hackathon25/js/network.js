@@ -37,7 +37,11 @@ function network() {
     PNA.prototype.sizeCanvas = function () {
       this.canvas.width = this.container.offsetWidth;
       // TODO: FIX 
-      this.canvas.height = 3600;
+      if (document.getElementById("customCarousel1")){
+        this.canvas.height = this.container.offsetHeight;
+      }else{
+        this.canvas.height = 3150;
+      }
     };
   
     var Particle = function (parent, x, y) {
