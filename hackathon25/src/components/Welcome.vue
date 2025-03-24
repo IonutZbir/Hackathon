@@ -8,9 +8,9 @@ import InteractiveButton from './InteractiveButton.vue';
 		<div id="customCarousel1" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
+					<div class="container" >
+						<div class="row" style="display: flex; justify-content: center;">
+							<div class="col-md-6" >
 								<div class="detail-box">
 									<h1>
 										<p id="H">H</p>
@@ -25,16 +25,10 @@ import InteractiveButton from './InteractiveButton.vue';
 										<p id="L25">25</p>
 									</h1>
                                     <p class="power">Powered By Lab25A</p>
-									<p>
+									<p style="font-size: 1.1rem;">
 										L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove tecnologie in un ambiente dinamico e stimolante. 
 									</p>
 									<InteractiveButton text="ISCRIVITI"/>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="img-box">
-									<!-- QUI CI VA IL LOGO-->
-									<!-- <img src="@/images/slider-img.png" alt="" /> -->
 								</div>
 							</div>
 						</div>

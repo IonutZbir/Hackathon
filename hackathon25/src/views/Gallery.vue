@@ -27,7 +27,6 @@ onMounted(() => {network();})
 }
 .classe {
     width: 100%;
-    height: 3600px;
     /* TODO:FIX */
     position: absolute;
     background: var(--gradiente);

@@ -11,7 +11,7 @@ import CarouselView from "@/views/CarouselView.vue";
       </div>
       <div class="row">
         <div class="col-3">
-          <h2>Cos'è l'Hackathon</h2>
+          <h2>Chi può partecipare?</h2>
           <p>
             Questa competizione è destinata agli studenti del corso di laurea triennale in Informatica di Roma Tor
             Vergata e si svolgerà in formato a

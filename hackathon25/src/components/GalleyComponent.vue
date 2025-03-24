@@ -41,9 +41,11 @@
                     <img class="img img-big img-last" src="@/images/H2024/gallery/3.jpg">
                     <img class="img img-big" src="@/images/H2024/gallery/5.jpg">
                     <img class="img img-big" src="@/images/H2024/gallery/7.jpg">
+                    <img class="img img-last" src="@/images/H2024/gallery/141.jpg">
+
                   </div>
                   <div class="responsive-container-block img-cont">
-                    <img class="img" src="@/images/H2024/gallery/6.jpg">
+                    <img class="img" src="@/images/H2024/gallery/11.jpg">
                     <img class="img" src="@/images/H2024/gallery/2.jpg">
                     <img class="img" src="@/images/H2024/gallery/8.jpg">
                     <img class="img img-big" src="@/images/H2024/gallery/10.jpg">
@@ -57,27 +59,23 @@
 
 <style>
 
-.title2 {
-  margin-left: 22.5%;
-}
-img {
+.gallery-view img {
   border-radius: 12px;
 }
 .gallery-view section {
   position: relative;
 }
-.title1 {
-  color: white;
-}
-.title2 {
-  color: white;
+.gallery-view .title2 {
+  text-align: end;
 }
 .gallery-view h1 {
-    margin-top: 10px;
+  font-size: 4rem;
+  margin: 10px;
+  color: white;
 }
-.album {
+
+.gallery-view .album {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     width: 100%;
 }

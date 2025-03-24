@@ -2,14 +2,11 @@
  * Particle Network Animation
  * Inspiration: https://github.com/JulianLaval/canvas-particle-network
  */
-window.onload = network;
 
 function network() {
     var ParticleNetworkAnimation, PNA;
     ParticleNetworkAnimation = PNA = function () {};
     
-
-
     PNA.prototype.init = function (element) {
       this.$el = $(element);
   
@@ -39,7 +36,12 @@ function network() {
   
     PNA.prototype.sizeCanvas = function () {
       this.canvas.width = this.container.offsetWidth;
-      this.canvas.height = this.container.offsetHeight;
+      // TODO: FIX 
+      if (document.getElementById("customCarousel1")){
+        this.canvas.height = this.container.offsetHeight;
+      }else{
+        this.canvas.height = 3150;
+      }
     };
   
     var Particle = function (parent, x, y) {
@@ -83,9 +85,7 @@ function network() {
       this.ctx.beginPath();
       this.ctx.fillStyle = this.particleColor;
       this.ctx.globalAlpha = this.opacity;
-      offsetX = this.x;
-      offsetY = this.y;
-      this.ctx.arc(offsetX, offsetY, this.radius, 0, 2 * Math.PI);
+      this.ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
       this.ctx.fill();
     };
   
@@ -95,7 +95,7 @@ function network() {
         density: 15000, // the lower the denser
         netLineDistance: 200,
         netLineColor: "#929292",
-        particleColors: ["#aaa"]
+        particleColors: ["#aaa"] // ['#6D4E5C', '#aaa', '#FFC458' ]
       };
       this.canvas = parent.canvas;
       this.ctx = parent.ctx;
@@ -133,7 +133,7 @@ function network() {
             }
             counter++;
           }.bind(this),
-          2
+          2//50
         );
       } else {
         // Create particle objects
@@ -206,6 +206,7 @@ function network() {
             this.ctx.stroke();
           }
         }
+  
         // Draw particles
         for (var i = 0; i < this.particles.length; i++) {
           this.particles[i].update();
@@ -342,9 +343,9 @@ function network() {
       return array[Math.floor(Math.random() * array.length)];
     };
   
-    pna = new ParticleNetworkAnimation();
-    a = $(".particle-network-animation")[0]
-    console.log(a)
+    var pna = new ParticleNetworkAnimation();
+    var a = $(".particle-network-animation")[0]
     pna.init(a);
-  }
-  
+}
+
+export {network};
