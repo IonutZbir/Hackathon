@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import CarouselView from './CarouselView.vue';
 
 </script>
 
@@ -52,7 +51,6 @@ import CarouselView from './CarouselView.vue';
                 </div>
             </div>
         </div>
-        <CarouselView/>
     </section>
   </div>
 </template>

@@ -34,7 +34,7 @@ onMounted(() => {hamburgerMenu();})
                         <NavBarElement page-name="Home" page-link="/" />
                         <NavBarElement page-name="Info" page-link="/about" />
                         <NavBarElement page-name="Requisiti" page-link="/requiments" />
-                        <NavBarElement page-name="Galleria" page-link="/register" />
+                        <NavBarElement page-name="Galleria" page-link="/gallery" />
                         <!-- TODO: Rinominare in Registrati -->
                         <NavBarElement page-name="Crea Squadra" page-link="/create" />
                         <NavBarElement page-name="Squadra" page-link="/access" />
