@@ -50,7 +50,24 @@ import CarouselView from "@/views/CarouselView.vue";
   </section>
 </template>
 <style>
+@media (max-width: 800px) {
+  .about_section .roboto_font_500 {
+    font-size: 3rem;
+    /* max-width: 80%; */
+  }
+  .about_section .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .about_section .col-3 {
+    max-width: 80%;
+  } 
+
+  .about_section .col-3 h2 {
+    /* text-align: center; */
+  } 
+}
 .about_section col-3 {
   height: 100%;
 }

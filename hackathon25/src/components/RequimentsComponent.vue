@@ -51,7 +51,6 @@ import InteractiveButton from './InteractiveButton.vue';
 </template>
 <style>
 .requiments_section {
-  background: var(--gradiente);
   position: relative;
 }
 

@@ -32,8 +32,8 @@ onMounted(() => {hamburgerMenu();})
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <NavBarElement page-name="Home" page-link="/" />
-                        <NavBarElement page-name="Info" page-link="/about" />
-                        <NavBarElement page-name="Requisiti" page-link="/requiments" />
+                        <!-- <NavBarElement page-name="Info" page-link="/about" /> -->
+                        <!-- <NavBarElement page-name="Requisiti" page-link="/requiments" /> -->
                         <NavBarElement page-name="Galleria" page-link="/gallery" />
                         <!-- TODO: Rinominare in Registrati -->
                         <NavBarElement page-name="Crea Squadra" page-link="/create" />

@@ -40,7 +40,11 @@ const isTeam = computed(() => props.pageName === "Squadra");
 </template>
 
 <style>
-.nav-item:hover{
-	color: #3f8fda
+.nav-item:hover {
+	color: #3f8fda;
+}
+
+.nav-item {
+	font-weight: bold;
 }
 </style>
