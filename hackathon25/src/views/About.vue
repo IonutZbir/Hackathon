@@ -10,7 +10,7 @@ import AboutComponent from "@/components/AboutComponent.vue";
 import Footer from "@/components/Footer.vue";
 </script>
 <template>
-	<StandaloneNavbar bg-color="#433194" />
+	<StandaloneNavbar bg-color="transparent" />
 	<AboutComponent />
 	<Footer />
 </template>

@@ -17,18 +17,12 @@ onMounted(() => {network();})
             </div>
             <StandaloneNavbar bg-color="transparent"/>
             <GalleyComponent/>
-            <Footer />
+            <Footer/>
         </div>
 </template>
 <style>
 .uno {
     position: relative;
     height: 0%;
-}
-.classe {
-    width: 100%;
-    /* TODO:FIX */
-    position: absolute;
-    background: var(--gradiente);
 }
 </style>

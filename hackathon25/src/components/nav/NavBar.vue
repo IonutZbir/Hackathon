@@ -19,6 +19,23 @@ import StandaloneNavbar from './StandaloneNavbar.vue';
 </template>
 
 <style>
+body {
+  background: var(--gradiente);
+  min-height: 100vh;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: inherit;
+  z-index: -1;
+}
+
+
 .hero_area .hero_bg_box {
     position: absolute;
     top: 0;

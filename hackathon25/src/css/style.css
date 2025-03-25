@@ -90,57 +90,6 @@ a:focus {
           box-shadow: none;
 }
 
-/*header section*/
-/* .hero_area {
-  position: relative;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-} */
-
-/* .hero_area .hero_bg_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.bg_img_box {
-  width: 100%;
-  height: 100vh;
-  background: radial-gradient(circle at top left, #201847, #433194);
-  position: relative;
-}
-.wave{
-  position: absolute;
-  bottom: -7.2%;
-} */
-
-/* .hero_area .hero_bg_box .bg_img_box {
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.hero_area .hero_bg_box img {
-  min-width: 100%;
-  min-height: 100%;
-} */
-
 .sub_page .hero_area {
   min-height: auto;
   background: linear-gradient(130deg, #231a6f, #0f054c);
