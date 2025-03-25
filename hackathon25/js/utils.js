@@ -1,23 +1,12 @@
 function hamburgerMenu(){
-    document.addEventListener("DOMContentLoaded", function () {
-        const navbarToggler = document.querySelector(".navbar-toggler");
-        const navbarCollapse = document.querySelector("#navbarSupportedContent");
-        
-        if (navbarToggler && navbarCollapse) {
-            navbarToggler.addEventListener("click", function () {
-                const isExpanded = navbarCollapse.classList.contains("show");
-                if (isExpanded) {
-                    navbarCollapse.classList.remove("show");
-                    navbarToggler.setAttribute("aria-expanded", "false");
-                } else {
-                    navbarCollapse.classList.add("show");
-                    navbarToggler.setAttribute("aria-expanded", "true");
-                }
-            });
-        }
+    var h_menu_button = $('.h-menu');
+
+    h_menu_button.on('click', function() {
+        $(this).toggleClass('active not-active');
+        $('.navbar-collapse').toggleClass('show');
     });
 }
-    
+   
 export {hamburgerMenu}
 
 function getYear() {

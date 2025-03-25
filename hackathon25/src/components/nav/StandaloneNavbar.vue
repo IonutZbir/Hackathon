@@ -23,11 +23,11 @@ onMounted(() => {hamburgerMenu();})
 
                 <LogoNavBar />
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class=""> </span>
-                </button>
+                <div class="h-menu not-active">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">

@@ -3011,7 +3011,8 @@ input[type="button"].btn-block {
 }
 
 .collapse:not(.show) {
-  display: none;
+  /* display: none; */
+  height: 0vh;
 }
 
 .collapsing {
@@ -4209,12 +4210,24 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
+
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  top: 70px;
+  height: 20vh;
+  z-index: 1;
+
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   -ms-flex-positive: 1;
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
+  transition: height 0.6s;
 }
 
 .navbar-toggler {
@@ -4356,12 +4369,17 @@ input[type="button"].btn-block {
     flex-wrap: nowrap;
   }
   .navbar-expand-lg .navbar-collapse {
+
+    position: relative;
+    height: auto;
+    top: 0px;
+
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
-  .navbar-expand-lg .navbar-toggler {
+  .navbar-expand-lg .h-menu {
     display: none;
   }
 }
