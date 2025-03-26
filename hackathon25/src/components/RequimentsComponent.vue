@@ -35,12 +35,12 @@ import InteractiveButton from './InteractiveButton.vue';
           <Card title="Python"
             description="Per partecipare all'Hackathon è richiesta una conoscenza di base di Python. Questo requisito è alla portata di tutti, dato che nel primo semestre avete seguito il corso di programmazione."
             immagine="src/images/python-logo-only.svg" more-desc="How To Python" more-link="https://www.python.org//" />
-          <Card title="Programmazione Web"
-            description="Per affrontare le sfide dell'Hackathon, è utile avere una conoscenza di base della programmazione web. Comprendere l'HTML, il CSS e il JavaScript ti permetterà di sviluppare soluzioni interattive e dinamiche."
-            immagine="" />
+          <Card title="GITHUB"
+            description="GitHub è una piattaforma di hosting per il controllo di versione che facilita la collaborazione tra sviluppatori. Durante l'Hackathon, utilizzerai GitHub per accedere al repository con i problemi da risolvere e per caricare (push) le tue soluzioni. Grazie a GitHub, potrai gestire il codice in modo organizzato, lavorare in team e tenere traccia delle modifiche effettuate."
+            immagine="src/images/github-mark.svg" more-desc="How To Git" more-link="https://www.python.org//" />
           <Card title="Capacità di Problem Solving"
             description="Il problem solving è una competenza fondamentale per ogni sviluppatore. Durante l'Hackathon, dovrai analizzare problemi complessi, trovare soluzioni efficienti e implementarle nel modo più ottimale possibile."
-            immagine="" />
+            immagine="src/images/problem_solving.svg" />
         </div>
         <div class="button-center">
           <InteractiveButton text="Vedi tutto" />

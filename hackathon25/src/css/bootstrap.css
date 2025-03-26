@@ -4211,14 +4211,13 @@ input[type="button"].btn-block {
 
 .navbar-collapse {
 
-  position: absolute;
+  position: relative;
   overflow: hidden;
   left: 0;
   right: 0;
   margin: auto;
   width: 50%;
-  top: 70px;
-  height: 20vh;
+  height: 25vh;
   z-index: 1;
 
   -ms-flex-preferred-size: 100%;
