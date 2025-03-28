@@ -28,16 +28,16 @@ import InteractiveButton from './InteractiveButton.vue';
             Requisiti
           </h2>
           <p id="requiremets-text">
-            Come tutti gli anni, sono richieste delle minime compentenze per essere in grado di competere.
+            Come tutti gli anni, sono richieste delle minime compentenze per essere in grado di partecipare.
           </p>
         </div>
         <div class="row">
           <Card title="Python"
-            description="Per partecipare all'Hackathon è richiesta una conoscenza di base di Python. Questo requisito è alla portata di tutti, dato che nel primo semestre avete seguito il corso di programmazione."
-            immagine="src/images/python-logo-only.svg" more-desc="How To Python" more-link="https://www.python.org//" />
+            description="Python è un linguaggio di programmazione ad alto livello, versatile e facile da apprendere."
+            immagine="src/images/python-logo-only.svg" more-desc="Scopri di più" more-link="https://www.python.org/" />
           <Card title="GITHUB"
-            description="GitHub è una piattaforma di hosting per il controllo di versione che facilita la collaborazione tra sviluppatori. Durante l'Hackathon, utilizzerai GitHub per accedere al repository con i problemi da risolvere e per caricare (push) le tue soluzioni. Grazie a GitHub, potrai gestire il codice in modo organizzato, lavorare in team e tenere traccia delle modifiche effettuate."
-            immagine="src/images/github-mark.svg" more-desc="How To Git" more-link="https://www.python.org//" />
+            description="GitHub è una piattaforma di hosting per il controllo di versione basato su Git, che permette agli sviluppatori di collaborare, gestire progetti e condividere codice. Offre funzionalità come repository pubblici e privati."
+            immagine="src/images/github-mark.svg" more-desc="Scopri di più" more-link="https://git-scm.com//" />
           <Card title="Capacità di Problem Solving"
             description="Il problem solving è una competenza fondamentale per ogni sviluppatore. Durante l'Hackathon, dovrai analizzare problemi complessi, trovare soluzioni efficienti e implementarle nel modo più ottimale possibile."
             immagine="src/images/problem_solving.svg" />
@@ -66,7 +66,6 @@ import InteractiveButton from './InteractiveButton.vue';
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin-top: 45px;
   background-color: #f8f8f9;
   padding: 20px;
   border-radius: 5px;
