@@ -3,7 +3,6 @@
 </script>
 
 <template>
-  <!-- TODO: ridimensionare le immagini -->
   <div class="gallery-view">
     <section>
       <h1 class="title1">HACKATHON<p>19</p>

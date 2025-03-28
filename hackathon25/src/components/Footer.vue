@@ -4,8 +4,6 @@ import { onMounted } from 'vue';
 onMounted(() => { getYear(); })
 </script>
 
-<!--TODO: allinea i link ai social, quello che ti ho fatto vedere su telegram, pls-->
-
 <template>
     <footer class="footer">
         <section class="info_section layout_padding2">
