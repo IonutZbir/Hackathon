@@ -6,13 +6,3 @@ services:
     container_name: vue-app
     ports:
       - "80:80"
-
-  nginx:
-    image: nginx:alpine
-    container_name: nginx-app
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - "80:80"
-    depends_on:
-      - app
