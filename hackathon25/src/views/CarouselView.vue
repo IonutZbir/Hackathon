@@ -64,7 +64,7 @@
     animation-play-state: paused;
 }
 .carousel {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(90deg, rgba(0,0,0,var(--opacity)) 8%, rgba(0,0,0,1) 28%, rgba(0,0,0,1) 72%, rgba(0,0,0,var(--opacity)) 92%);  
 }
