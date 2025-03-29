@@ -10,18 +10,18 @@
       <div class="album">
         <div class="responsive-container-block bg">
           <div class="responsive-container-block img-cont">
-            <img class="img" src="@/images/H2019/1.jpg">
-            <img class="img" src="@/images/H2019/4.jpg">
-            <!-- <img class="img img-last" src="@/images/H2019/3.jpg"> -->
+            <img class="img" src="/images/H2019/1.jpg">
+            <img class="img" src="/images/H2019/4.jpg">
+            <!-- <img class="img img-last" src="/images/H2019/3.jpg"> -->
           </div>
           <div class="responsive-container-block img-cont">
-            <img class="img img-big img-last" src="@/images/H2019/3.jpg">
-            <img class="img img-big" src="@/images/H2019/5.jpg">
+            <img class="img img-big img-last" src="/images/H2019/3.jpg">
+            <img class="img img-big" src="/images/H2019/5.jpg">
           </div>
           <div class="responsive-container-block img-cont">
-            <img class="img" src="@/images/H2019/6.jpg">
-            <img class="img" src="@/images/H2019/2.jpg">
-            <!-- <img class="img" src="@/images/H2019/1.jpg"> -->
+            <img class="img" src="/images/H2019/6.jpg">
+            <img class="img" src="/images/H2019/2.jpg">
+            <!-- <img class="img" src="/images/H2019/1.jpg"> -->
           </div>
         </div>
       </div>
@@ -33,24 +33,24 @@
       <div class="album">
         <div class="responsive-container-block bg">
           <div class="responsive-container-block img-cont">
-            <img class="img" src="@/images/H2024/gallery/1.jpg">
-            <img class="img" src="@/images/H2024/gallery/4.jpg">
-            <img class="img img-last" src="@/images/H2024/gallery/6.jpg">
-            <img class="img img-last" src="@/images/H2024/gallery/9.jpg">
+            <img class="img" src="/images/H2024/gallery/1.jpg">
+            <img class="img" src="/images/H2024/gallery/4.jpg">
+            <img class="img img-last" src="/images/H2024/gallery/6.jpg">
+            <img class="img img-last" src="/images/H2024/gallery/9.jpg">
           </div>
           <div class="responsive-container-block img-cont">
-            <img class="img img-big img-last" src="@/images/H2024/gallery/3.jpg">
-            <img class="img img-big" src="@/images/H2024/gallery/5.jpg">
-            <img class="img img-big" src="@/images/H2024/gallery/7.jpg">
-            <img class="img img-last" src="@/images/H2024/gallery/141.jpg">
+            <img class="img img-big img-last" src="/images/H2024/gallery/3.jpg">
+            <img class="img img-big" src="/images/H2024/gallery/5.jpg">
+            <img class="img img-big" src="/images/H2024/gallery/7.jpg">
+            <img class="img img-last" src="/images/H2024/gallery/141.jpg">
 
           </div>
           <div class="responsive-container-block img-cont">
-            <img class="img" src="@/images/H2024/gallery/11.jpg">
-            <img class="img" src="@/images/H2024/gallery/2.jpg">
-            <img class="img" src="@/images/H2024/gallery/8.jpg">
-            <img class="img img-big" src="@/images/H2024/gallery/10.jpg">
-            <!-- <img class="img" src="@/images/H2024/gallery/1.jpg"> -->
+            <img class="img" src="/images/H2024/gallery/11.jpg">
+            <img class="img" src="/images/H2024/gallery/2.jpg">
+            <img class="img" src="/images/H2024/gallery/8.jpg">
+            <img class="img img-big" src="/images/H2024/gallery/10.jpg">
+            <!-- <img class="img" src="/images/H2024/gallery/1.jpg"> -->
           </div>
         </div>
       </div>

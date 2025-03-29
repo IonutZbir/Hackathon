@@ -2,37 +2,37 @@
 
 <div class="carousel">
             <div class="mask"> 
-                <img class="carousel-image"          src="../images/H2024/1.jpg">
-                <img class="carousel-image"          src="../images/H2024/2.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/3_.jpg">
-                <img class="carousel-image"          src="../images/H2024/4.jpg">
-                <img class="carousel-image"          src="../images/H2024/5.jpg">
-                <img class="carousel-image"          src="../images/H2024/6.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/7_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/8_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/9_.jpg">
-                <img class="carousel-image"          src="../images/H2024/10.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/11_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/12_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/13_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/15_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/16_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/17_.jpg">
+                <img class="carousel-image"          src="/images/H2024/1.jpg">
+                <img class="carousel-image"          src="/images/H2024/2.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/3_.jpg">
+                <img class="carousel-image"          src="/images/H2024/4.jpg">
+                <img class="carousel-image"          src="/images/H2024/5.jpg">
+                <img class="carousel-image"          src="/images/H2024/6.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/7_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/8_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/9_.jpg">
+                <img class="carousel-image"          src="/images/H2024/10.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/11_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/12_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/13_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/15_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/16_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/17_.jpg">
                 <!-- REPEATING -->
-                <img class="carousel-image"          src="../images/H2024/1.jpg">
-                <img class="carousel-image"          src="../images/H2024/2.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/3_.jpg">
-                <img class="carousel-image"          src="../images/H2024/4.jpg">
-                <img class="carousel-image"          src="../images/H2024/5.jpg">
-                <img class="carousel-image"          src="../images/H2024/6.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/7_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/8_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/9_.jpg">
-                <img class="carousel-image"          src="../images/H2024/10.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/11_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/12_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/13_.jpg">
-                <img class="carousel-image vertical" src="../images/H2024/15_.jpg">
+                <img class="carousel-image"          src="/images/H2024/1.jpg">
+                <img class="carousel-image"          src="/images/H2024/2.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/3_.jpg">
+                <img class="carousel-image"          src="/images/H2024/4.jpg">
+                <img class="carousel-image"          src="/images/H2024/5.jpg">
+                <img class="carousel-image"          src="/images/H2024/6.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/7_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/8_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/9_.jpg">
+                <img class="carousel-image"          src="/images/H2024/10.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/11_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/12_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/13_.jpg">
+                <img class="carousel-image vertical" src="/images/H2024/15_.jpg">
             </div>
         </div>
 </template>

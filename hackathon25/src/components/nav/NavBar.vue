@@ -29,7 +29,7 @@ body::after {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 100vw; */
+  width: 100%;
   height: 100vh;
   background: inherit;
   z-index: -1;
@@ -55,7 +55,7 @@ body::after {
 
 .bg_img_box {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: var(--gradiente);
     position: relative;
 }

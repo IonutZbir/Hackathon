@@ -34,13 +34,13 @@ import InteractiveButton from './InteractiveButton.vue';
         <div class="row">
           <Card title="Python"
             description="Python è un linguaggio di programmazione ad alto livello, versatile e facile da apprendere."
-            immagine="../images/python.svg" more-desc="Scopri di più" more-link="https://www.python.org/" />
+            immagine="/images/python.svg" more-desc="Scopri di più" more-link="https://www.python.org/" />
           <Card title="GITHUB"
             description="GitHub è una piattaforma di hosting per il controllo di versione basato su Git, che permette agli sviluppatori di collaborare, gestire progetti e condividere codice. Offre funzionalità come repository pubblici e privati."
-            immagine="images/github.svg" more-desc="Scopri di più" more-link="https://git-scm.com//" />
+            immagine="/images/github.svg" more-desc="Scopri di più" more-link="https://git-scm.com//" />
           <Card title="Capacità di Problem Solving"
             description="Il problem solving è una competenza fondamentale per ogni sviluppatore. Durante l'Hackathon, dovrai analizzare problemi complessi, trovare soluzioni efficienti e implementarle nel modo più ottimale possibile."
-            immagine="./images/problem_solving.svg" />
+            immagine="/images/problem_solving.svg" />
         </div>
         <div class="button-center">
           <InteractiveButton text="Vedi tutto" />
