@@ -6,3 +6,14 @@ services:
     container_name: vue-app
     ports:
       - "80:80"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: backend-stage
+    container_name: backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./server/data.json:/hackathon25/data.json
