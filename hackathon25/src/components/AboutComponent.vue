@@ -1,5 +1,15 @@
 <script setup>
-import CarouselView from "@/views/CarouselView.vue";
+import { onMounted, onUnmounted } from "vue";
+import {revealOnce} from "@/../js/animation"
+
+onMounted(() => {
+  window.addEventListener("scroll", revealOnce);
+});
+
+onUnmounted(() => {
+   window.removeEventListener("scroll", revealOnce);
+});
+
 </script>
 <template>
   <section class="about_section layout_padding">
@@ -10,7 +20,7 @@ import CarouselView from "@/views/CarouselView.vue";
         </h1>
       </div>
       <div class="row">
-        <div class="col-3">
+        <div class="col-3 left-animation reveal">
           <h2>Chi può partecipare?</h2>
           <p>
             Questa competizione è destinata agli studenti del corso di laurea triennale in Informatica di Roma Tor
@@ -19,7 +29,7 @@ import CarouselView from "@/views/CarouselView.vue";
             il sabato mattina, dando ai partecipanti il tempo di impegnarsi intensamente nel risolvere le sfide.
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-3 left-animation reveal">
           <h2>CFU D</h2>
           <p>
             Un aspetto interessante dell'Hackathon è che offre un'opportunità per ottenere Crediti Formativi
@@ -28,14 +38,14 @@ import CarouselView from "@/views/CarouselView.vue";
             CFU corrisponde a 25 ore di impegno, e per ottenerlo dovrai partecipare per almeno 6 ore e risolvere 3
             problemi.</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 right-animation reveal">
           <h2>Premi</h2>
           <p>
             I premi per i vincitori saranno suddivisi in base alla classifica (primo, secondo e terzo posto) e
             consisteranno in premi materiali, che verranno annunciati più avanti.
           </p>
         </div>
-        <div class="col-3">
+        <div class="col-3 right-animation reveal">
           <h2>Problemi</h2>
           <p>
             Durante l'Hackathon, affronterai una serie di problemi di algoritmici pensati per mettere alla prova le
@@ -93,20 +103,37 @@ import CarouselView from "@/views/CarouselView.vue";
   margin-top: 15px;
 }
 
-/*IN CASO DI LINK*/
-/* .about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #00bbf0;
-  color: #ffffff;
-  border-radius: 0px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: none;
-  margin-top: 15px;
+
+.about_section .left-animation {
+  opacity: 0;
+  transform: translateX(-10vw);
+  transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out;
+  /* animation: show-in linear;
+  animation-timeline: view(); */
 }
 
-.about_section .detail-box a:hover {
-  background-color: #007fa4;
+.about_section .right-animation {
+  opacity: 0;
+  transform: translateX(10vw);
+  transition: opacity 1.3s ease-in-out, transform 1.3s ease-in-out;
+  /* animation: show-in linear;
+  animation-timeline: view(); */
+}
+
+.about_section .left-animation.active, 
+.about_section .right-animation.active{
+  opacity: 1;
+  transform: translateX(0vw);
+}
+
+/* Utile ma non ancora implementato in tutti i browser */
+/* @keyframes show-in  {
+  50% {
+    opacity: 1;
+    transform: translateX(0vw);
+  }
+  100% { 
+  }
 } */
+
 </style>
