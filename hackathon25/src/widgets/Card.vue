@@ -23,10 +23,22 @@ const props = defineProps({
 });
 </script>
 
-<style></style>
+<style>
+.card-view {
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.card-view.active {
+  opacity: 1;
+  transform: translateY(0vh);
+}
+
+</style>
 
 <template>
-    <div class="col-md-4 card-view">
+    <div class="col-md-4 card-view reveal">
         <div class="box ">
             <div class="desc-image">
                 <img class="inner-image" :src="immagine" alt="">
