@@ -6,14 +6,10 @@ services:
     container_name: vue-app
     ports:
       - "80:80"
+      - 443:443
 
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      target: backend-stage
-    container_name: backend
-    ports:
-      - "3000:3000"
+  certbot:
+    image: certbot/certbot:latest
     volumes:
-      - ./server/data.json:/hackathon25/data.json
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw

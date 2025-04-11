@@ -74,6 +74,15 @@ onMounted(() => { getYear(); })
                                         <font-awesome-icon icon="fab fa-github" />
                                     </a>
                                 </div>
+                                <div class="org_social">
+                                    <span>Mirco Pasquali</span>
+                                    <a href="">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="https://github.com/mirco0" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,15 +108,6 @@ onMounted(() => { getYear(); })
                                     </a>
                                     <a href="https://art.uniroma2.it/zanzotto/" target="_blank">
                                         <font-awesome-icon icon="fa fa-globe" />
-                                    </a>
-                                </div>
-                                <div class="org_social">
-                                    <span>Mirco Pasquali</span>
-                                    <a href="">
-                                        <font-awesome-icon icon="fab fa-instagram" />
-                                    </a>
-                                    <a href="https://github.com/mirco0" target="_blank">
-                                        <font-awesome-icon icon="fab fa-github" />
                                     </a>
                                 </div>
                                 <div class="org_social">

@@ -6,6 +6,7 @@ import Register from '@/views/Register.vue';
 import Gallery from '@/views/Gallery.vue';
 import Create from '@/views/Create.vue';
 import Access from '@/views/Access.vue';
+import Info from '@/views/Info.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/gallery', component: Gallery },
   { path: '/create', component: Create },
   { path: '/access', component: Access },
+  { path: '/info', component: Info },
 ];
 
 const router = createRouter({
