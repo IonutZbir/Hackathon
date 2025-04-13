@@ -2,9 +2,13 @@
 
 </script>
 <style>
+    .info h1, .info p, .info a, .info li, .info pre{
+        color: white;
+    }
+
     .info header {
         text-align: center;
-        padding: 60px 20px 30px;
+        padding: 60px 20px 0px;
     }
 
     .info header h1 {
@@ -51,7 +55,7 @@
     <section>
         <h2>1. Installa Python</h2>
 
-        <p class="platform">🔹 Windows</p>
+        <p class="platform">Windows</p>
         <ol>
             <li>Vai su <a href="https://www.python.org/downloads/windows/" target="_blank">python.org</a></li>
             <li>Scarica la versione consigliata</li>
@@ -59,62 +63,38 @@
         </ol>
         <pre><code>python --version</code></pre>
 
-        <p class="platform">🔸 Linux (Ubuntu)</p>
-        <pre>
-            <code>
-                sudo apt update
-                sudo apt install python3 python3-pip
-                python3 --version
-            </code>
-        </pre>
+        <p class="platform">Linux (Ubuntu)</p>
+        <pre><code>sudo apt update
+sudo apt install python3 python3-pip
+python3 --version</code></pre>
 
-        <h2>2. Clona un Repository GitHub</h2>
+        <h2>2. Clona il repository GitHub</h2>
 
-        <p class="platform">🔹 Windows</p>
-        <pre>
-            <code>
-                git clone https://github.com/tuo-username/tuo-repo.git
-            </code>
-        </pre>
+        <p class="platform">Windows</p>
+        <pre><code>git clone <a href="https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git">https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git</a></code></pre>
 
-        <p class="platform">🔸 Linux</p>
-        <pre>
-            <code>
-                sudo apt install git
-                git clone https://github.com/tuo-username/tuo-repo.git
-            </code>
-        </pre>
+        <p class="platform">Linux</p>
+        <pre><code>sudo apt install git
+git clone <a href="https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git">https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git</a></code></pre>
 
         <h2>3. 🧠 Come Risolvere le Challenge</h2>
         <ul>
         <li>Leggi attentamente il problema: input, output, esempi.</li>
-        <li>Scrivi codice modulare e testabile.</li>
+        <li>Scrivi codice efficiente.</li>
         </ul>
-        <pre>
-            <code>
-                def somma(a, b):
-                return a + b
-                print(somma(2, 3))  # Output: 5
-            </code>
-        </pre>
-
-        <p>✅ Testa vari casi:</p>
-        <pre>
-            <code>
-                assert somma(0, 0) == 0
-                assert somma(-1, 1) == 0
-                assert somma(10, 5) == 15
-            </code>
-        </pre>
+        <pre><code>def solve(a, b):
+    return a + b
+</code></pre>
         
-        <p>📤 Versiona il tuo codice:</p>
-        <pre>
-            <code>
-                git add .
-                git commit -m "Soluzione challenge 1"
-                git push origin main
-            </code>
-        </pre>
+        <p>✅ Testa tutti i problemi:</p>
+        <pre><code>python3 run.py</code></pre>
+        
+        <p>✅ Testa un problema specifico:</p>
+        <pre><code>python3 run.py -test 3</code></pre>
+        
+        <p>📤 Versiona il tuo codice se necessario:</p>
+        <pre><code>git add .
+git commit -m "Soluzione challenge 1"</code></pre>
 
         <h2>🚀 Suggerimenti Finali</h2>
         <ul>

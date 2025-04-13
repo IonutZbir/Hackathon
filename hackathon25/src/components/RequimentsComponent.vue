@@ -43,7 +43,7 @@ import InteractiveButton from './InteractiveButton.vue';
             immagine="/images/problem_solving.svg" />
         </div>
         <div class="button-center">
-          <InteractiveButton text="Vedi tutto" />
+          <InteractiveButton text="Vedi tutto" to="/info"/>
         </div>
       </div>
     </div>

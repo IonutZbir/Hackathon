@@ -1,16 +1,31 @@
 
 <script setup>
+    import { useRouter } from 'vue-router';
+    const router = useRouter();
+
     const props = defineProps({
         text: {
             type: String,
             required: true,
             default: "BOTTONE"
+        },
+        to : {
+            type: String,
+            required: false
         }
         });
+
+    const goto = () => {
+        if(props.to){
+            router.push(props.to);
+            window.scrollTo({ top: 0, behavior: 'auto' });
+        }
+    };
+
 </script>
 
 <template>    
-    <div class="button-box"><a class="inner-button-text"> {{props.text}} </a></div>
+    <div @click="goto" class="button-box"><a class="inner-button-text"> {{props.text}} </a></div>
 </template>
 
 <style>
