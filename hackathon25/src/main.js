@@ -10,11 +10,11 @@ window.$ = jQuery
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser, faPlus, faUsers, faLocationDot, faEnvelope, faGlobe} from "@fortawesome/free-solid-svg-icons";
-import { faInstagram, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 
-library.add(faUser, faPlus, faUsers, faLocationDot, faEnvelope, faInstagram, faGithub, faGlobe);
+library.add(faUser, faPlus, faUsers, faLocationDot, faEnvelope, faInstagram, faGithub, faTelegram,faGlobe);
 
 const app = createApp(App);
 

@@ -21,7 +21,7 @@ onMounted(() => { getYear(); })
                                         Macroarea di Scienze MM.FF.NN Roma Tor Vergata
                                     </span>
                                 </a>
-                                <h4>
+                                <h4 style="margin-top: 20px;">
                                     Contatti
                                 </h4>
                                 <a href="mailto:info.lab25a@gmail.com">
@@ -39,6 +39,9 @@ onMounted(() => { getYear(); })
                             <a href="https://github.com/Lab25A-CS">
                                 <font-awesome-icon icon="fab fa-github" />
                             </a>
+                            <a href="https://t.me/+7oTyGbVL3Ps3N2E8">
+                                <font-awesome-icon icon="fab fa-telegram" />
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3 info_col">
@@ -52,7 +55,7 @@ onMounted(() => { getYear(); })
                                     <a href="https://www.instagram.com/giorgiapazienza_" target="_blank">
                                         <font-awesome-icon icon="fab fa-instagram" />
                                     </a>
-                                    <a href="">
+                                    <a href="https://github.com/Giorgia-Pazienza">
                                         <font-awesome-icon icon="fab fa-github" />
                                     </a>
                                 </div>
@@ -76,7 +79,7 @@ onMounted(() => { getYear(); })
                                 </div>
                                 <div class="org_social">
                                     <span>Mirco Pasquali</span>
-                                    <a href="">
+                                    <a href="https://www.instagram.com/mirco__p">
                                         <font-awesome-icon icon="fab fa-instagram" />
                                     </a>
                                     <a href="https://github.com/mirco0" target="_blank">
@@ -102,7 +105,7 @@ onMounted(() => { getYear(); })
                                     </a>
                                 </div>
                                 <div class="org_social">
-                                    <span>Prof. Fabio Massimo Zanzzoto</span>
+                                    <span>Prof. Fabio Massimo Zanzotto</span>
                                     <a href="mailto:fabio.massimo.zanzotto@uniroma2.it" target="_blank">
                                         <font-awesome-icon icon="fa fa-envelope" />
                                     </a>
@@ -128,9 +131,20 @@ onMounted(() => { getYear(); })
                                         <font-awesome-icon icon="fab fa-github" />
                                     </a>
                                 </div>
-                                <div class="org_social">
+                                
+                                <!-- <div class="org_social">
                                     <span>Francesco Compagnone</span>
-                                    <a href="">
+                                    <a href="https://www.instagram.com/compssss">
+                                        <font-awesome-icon icon="fab fa-instagram" />
+                                    </a>
+                                    <a href="" target="_blank">
+                                        <font-awesome-icon icon="fab fa-github" />
+                                    </a>
+                                </div> -->
+
+                                <div class="org_social">
+                                    <span>Dimu</span>
+                                    <a href="https://www.instagram.com/soldato04">
                                         <font-awesome-icon icon="fab fa-instagram" />
                                     </a>
                                     <a href="" target="_blank">
@@ -145,12 +159,12 @@ onMounted(() => { getYear(); })
                             <h4>
                                 Sponsor
                             </h4>
-                            <div class="info_links">
-                                <a href="index.html">
-                                    <!-- Redbull -->
+                            <div class="info_links" id="sponsor_logo">
+                                <a href="https://www.redbull.com/it-it">
+                                    <img class="sponsor_logo" src="/images/redbull_logo.png">
                                 </a>
-                                <a class="" href="about.html">
-                                    <!-- BOH -->
+                                <a class="" href="https://www.universitaliasrl.it/">
+                                    <img class="sponsor_logo" src="/images/universitalia_logo.png">
                                 </a>
                                 <a class="" href="service.html">
                                     <!-- BOH -->
@@ -302,4 +316,20 @@ onMounted(() => { getYear(); })
 .copyright_section p a {
     color: inherit;
 }
+
+.info_section #sponsor_logo a{
+    width: 40%;
+}
+
+.info_section #sponsor_logo{ 
+    display: flexbox;
+    flex-direction: row;
+    gap: 10px;
+} 
+
+.info_section img {
+    /* display: none; */
+    width: 100%;
+}
+
 </style>
