@@ -160,14 +160,14 @@ onMounted(() => { getYear(); })
                                 Sponsor
                             </h4>
                             <div class="info_links" id="sponsor_logo">
-                                <a href="https://www.redbull.com/it-it">
+                                <a href="https://www.redbull.com/it-it" style="max-width: 70%;">
                                     <img class="sponsor_logo" src="/images/redbull_logo.png">
                                 </a>
-                                <a class="" href="https://www.universitaliasrl.it/">
+                                <a class="" href="https://www.universitaliasrl.it/" style="max-width: 70%;">
                                     <img class="sponsor_logo" src="/images/universitalia_logo.png">
                                 </a>
-                                <a class="" href="service.html">
-                                    <!-- BOH -->
+                                <a class="" href="https://reware.it" style="max-width: 70%;">
+                                    <img class="sponsor_logo" src="/images/reware_logo.png">
                                 </a>
                                 <a class="" href="why.html">
                                     <!-- BOH -->
