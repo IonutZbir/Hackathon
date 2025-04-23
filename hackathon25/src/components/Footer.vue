@@ -143,7 +143,7 @@ onMounted(() => { getYear(); })
                                 </div> -->
 
                                 <div class="org_social">
-                                    <span>Dimu</span>
+                                    <span>Dimutu Hewadewage</span>
                                     <a href="https://www.instagram.com/soldato04">
                                         <font-awesome-icon icon="fab fa-instagram" />
                                     </a>
@@ -157,7 +157,7 @@ onMounted(() => { getYear(); })
                     <div class="col-md-3 info_col">
                         <div class="info_detail">
                             <h4>
-                                Sponsor
+                                Powered by
                             </h4>
                             <div class="info_links" id="sponsor_logo">
                                 <a href="https://www.redbull.com/it-it" style="max-width: 70%;">

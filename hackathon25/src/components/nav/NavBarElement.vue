@@ -19,7 +19,7 @@ const route = useRoute();
 const isActive = computed(() => route.path === props.pageLink);
 const isRegister = computed(() => props.pageName === "Registrati");
 const isCreateTeam = computed(() => props.pageName === "Crea Squadra");
-const isTeam = computed(() => props.pageName === "Squadra");
+const isTeam = computed(() => props.pageName === "Squadre");
 </script>
 
 <template>

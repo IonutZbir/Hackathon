@@ -28,7 +28,7 @@ import InteractiveButton from './InteractiveButton.vue';
 									<p style="font-size: 1.1rem;">
 										L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove tecnologie in un ambiente dinamico e stimolante. 
 									</p>
-									<a href="https://google.com"><InteractiveButton text="ISCRIVITI"/></a>
+									<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Kr7FJGTXxUCZdYLQiuR9Dq6ufqJh71NIhWBICVjQgHdUMTlEMlhIOFVNMzZRR0hSUFRXUzg0RFUwWi4u"><InteractiveButton text="ISCRIVITI"/></a>
 
 								</div>
 							</div>

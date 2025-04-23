@@ -1,5 +1,5 @@
-<script>
-
+<script setup>
+import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
 </script>
 <style>
     .info h1, .info p, .info a, .info li, .info pre{
@@ -47,6 +47,7 @@
 </style>
 
 <template>
+    <StandaloneNavbar/>
     <div class="info">
     <header>
         <h1>Guida ai Primi Passi - Hackathon25</h1>
@@ -77,7 +78,7 @@ python3 --version</code></pre>
         <pre><code>sudo apt install git
 git clone <a href="https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git">https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git</a></code></pre>
 
-        <h2>3. 🧠 Come Risolvere le Challenge</h2>
+        <h2>3.Come Risolvere le Challenge</h2>
         <ul>
         <li>Leggi attentamente il problema: input, output, esempi.</li>
         <li>Scrivi codice efficiente.</li>
@@ -86,17 +87,17 @@ git clone <a href="https://github.com/Lab25A-CS/Hackathon-2025-TorVergata.git">h
     return a + b
 </code></pre>
         
-        <p>✅ Testa tutti i problemi:</p>
+        <p>Testa tutti i problemi:</p>
         <pre><code>python3 run.py</code></pre>
         
-        <p>✅ Testa un problema specifico:</p>
+        <p>Testa un problema specifico:</p>
         <pre><code>python3 run.py -test 3</code></pre>
         
-        <p>📤 Versiona il tuo codice se necessario:</p>
+        <p>Versiona il tuo codice se necessario:</p>
         <pre><code>git add .
 git commit -m "Soluzione challenge 1"</code></pre>
 
-        <h2>🚀 Suggerimenti Finali</h2>
+        <h2>Suggerimenti Finali</h2>
         <ul>
         <li>Lavora in team, comunica spesso.</li>
         <li>Non aver paura di chiedere aiuto.</li>
