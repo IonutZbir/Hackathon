@@ -159,15 +159,15 @@ onMounted(() => { getYear(); })
                             <h4>
                                 Powered by
                             </h4>
-                            <div class="info_links" id="sponsor_logo">
+                            <div class="info_links" id="image_logo">
                                 <a href="https://www.redbull.com/it-it" style="max-width: 70%;">
-                                    <img class="sponsor_logo" src="/images/redbull_logo.png">
+                                    <img class="image_logo" src="/images/redbull_logo.png">
                                 </a>
                                 <a class="" href="https://www.universitaliasrl.it/" style="max-width: 70%;">
-                                    <img class="sponsor_logo" src="/images/universitalia_logo.png">
+                                    <img class="image_logo" src="/images/universitalia_logo.png">
                                 </a>
                                 <a class="" href="https://reware.it" style="max-width: 70%;">
-                                    <img class="sponsor_logo" src="/images/reware_logo.png">
+                                    <img class="image_logo" src="/images/reware_logo.png">
                                 </a>
                                 <a class="" href="why.html">
                                     <!-- BOH -->
@@ -317,11 +317,11 @@ onMounted(() => { getYear(); })
     color: inherit;
 }
 
-.info_section #sponsor_logo a{
+.info_section #image_logo a{
     width: 40%;
 }
 
-.info_section #sponsor_logo{ 
+.info_section #image_logo{ 
     display: flexbox;
     flex-direction: row;
     gap: 10px;
