@@ -24,6 +24,7 @@ import InteractiveButton from './InteractiveButton.vue';
 										<p id="N">N</p>
 										<p id="L25">25</p>
 									</h1>
+									<h2 style="font-weight: bold;">9 Maggio ore 15:00 - 10 Maggio ore 9:00</h2>
                                     <p class="power">Powered By Lab25A</p>
 									<p style="font-size: 1.1rem;">
 										L'Hackathon è una competizione di problem solving che mette alla prova le capacità dei studenti nella risoluzione di problemi complessi e nella creazione di soluzioni innovative. È un'opportunità unica per testare le proprie abilità, lavorare in team e confrontarsi con altri partecipanti, imparando nuove tecnologie in un ambiente dinamico e stimolante. 

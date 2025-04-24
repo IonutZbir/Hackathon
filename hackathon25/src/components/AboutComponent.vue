@@ -25,8 +25,8 @@ onUnmounted(() => {
           <p>
             Questa competizione è destinata agli studenti del corso di laurea triennale in Informatica di Roma Tor
             Vergata e si svolgerà in formato a
-            squadre, con un massimo di 4 partecipanti per team. L'evento inizierà nel pomeriggio di venerdì e terminerà
-            il sabato mattina, dando ai partecipanti il tempo di impegnarsi intensamente nel risolvere le sfide.
+            squadre, con un massimo di 4 partecipanti per team. L'evento inizierà nel pomeriggio di venerdì 9 maggio alle ore 15:00 e terminerà
+            sabato 10 maggio alle ore 9:00, dando ai partecipanti il tempo di impegnarsi intensamente nel risolvere le sfide.
           </p>
         </div>
         <div class="col-3 left-animation reveal">
