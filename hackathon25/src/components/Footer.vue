@@ -163,16 +163,13 @@ onMounted(() => { getYear(); })
                                 <a href="https://www.redbull.com/it-it" style="max-width: 70%;">
                                     <img class="image_logo" src="/images/redbull_logo.png">
                                 </a>
-                                <a class="" href="https://www.universitaliasrl.it/" style="max-width: 70%;">
+                                <a href="https://www.universitaliasrl.it/" style="max-width: 70%;">
                                     <img class="image_logo" src="/images/universitalia_logo.png">
                                 </a>
-                                <a class="" href="https://reware.it" style="max-width: 70%;">
+                                <a href="https://reware.it" style="max-width: 70%;">
                                     <img class="image_logo" src="/images/reware_logo.png">
                                 </a>
-                                <a class="" href="why.html">
-                                    <!-- BOH -->
-                                </a>
-                                <a class="" href="team.html">
+                                <a href="team.html">
                                     <!-- BOH -->
                                 </a>
                             </div>
@@ -328,8 +325,16 @@ onMounted(() => { getYear(); })
 } 
 
 .info_section img {
-    /* display: none; */
-    width: 100%;
+        width: 100%;
 }
 
+#uni-info {
+    color: white;
+    font-weight: bold;
+}
+
+#uni-info:hover {
+    color: var(--action_color);
+    font-weight: bold;
+}
 </style>
