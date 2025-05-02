@@ -5,7 +5,7 @@ import Home from '@/views/Home.vue';
 import Register from '@/views/Register.vue';
 import Gallery from '@/views/Gallery.vue';
 import Create from '@/views/Create.vue';
-import Access from '@/views/Access.vue';
+import Teams from '@/views/Teams.vue';
 import Info from '@/views/Info.vue';
 
 const routes = [
@@ -14,7 +14,7 @@ const routes = [
   // { path: '/requiments', component: Requiments },
   { path: '/gallery', component: Gallery },
   { path: '/create', component: Create },
-  { path: '/access', component: Access },
+  { path: '/teams', component: Teams },
   { path: '/info', component: Info },
 ];
 
