@@ -11,6 +11,17 @@ services:
       - ./certbot/www/:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/letsencrypt/:rw
     #   - ./etc/:/etc/letsencrypt/ ATTIVARE PER LA GENERAZIONE DEI CERTIFICATI
+    
+  backend:
+      build:
+        context: .
+        dockerfile: Dockerfile
+        target: backend-stage
+      container_name: backend
+      ports:
+        - "3000:3000"
+      volumes:
+        - ./server/data.json:/hackathon25/data.json
 
   certbot:
     image: certbot/certbot:latest

@@ -29,7 +29,7 @@ COPY ./server .
 EXPOSE 3000
 
 # Start the Express server
-# CMD ["node", "server.js"]
+CMD ["node", "server.js"]
 
 # Stage 3: Production with Nginx (for serving the frontend)
 FROM nginx:stable-alpine as production-stage
