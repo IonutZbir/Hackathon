@@ -14,10 +14,11 @@ const DATA_FILE = path.join(__dirname, "data.json");
 
 app.use(express.json());
 
-app.put("/aggiungi", async (req, res) => {
+app.put("/createTeam", async (req, res) => {
     try {
-        const newData = req.body;
-        await fs.writeFile(DATA_FILE, JSON.stringify(newData, null, 2));
+        console.log(req.body);
+        // const newData = req.body;
+        // await fs.writeFile(DATA_FILE, JSON.stringify(newData, null, 2));
         res.json({ message: "Squadra registrata" });
     } catch (error) {
         console.error("Error writing to file", error);
