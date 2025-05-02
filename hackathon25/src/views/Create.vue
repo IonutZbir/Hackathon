@@ -38,29 +38,28 @@ function handleRegistration() {
 </script>
 <template>
     <StandaloneNavbar bg-color="transparent" />
-    <main>
-        <div class="login-box">
-            <div class="">
-                <p></p>
+    <div class="create">
+        <main>
+            <div class="login-box">
+                <form @submit.prevent="handleRegistration">
+                    <div class="form-group">
+                        <label for="matricola">Matricola</label>
+                        <input type="text" id="matricola" v-model="matricola" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeSquadra">Nome Squadra</label>
+                        <input type="text" id="nomeSquadra" v-model="nomeSquadra" required />
+                    </div>
+                    <button type="submit">CREA SQUADRA</button>
+                </form>
             </div>
-            <form @submit.prevent="handleRegistration">
-                <div class="form-group">
-                    <label for="matricola">Matricola</label>
-                    <input type="text" id="matricola" v-model="matricola" required />
-                </div>
-                <div class="form-group">
-                    <label for="nomeSquadra">Nome Squadra</label>
-                    <input type="text" id="nomeSquadra" v-model="nomeSquadra" required />
-                </div>
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </main>
+        </main>
+    </div>
 </template>
 
 <style>
 
-main{
+.create main{
     display: flex;
     height: 100vh;
 	justify-content: center;
@@ -69,7 +68,7 @@ main{
 	margin: 0;
 }
 
-.login-box {
+.create .login-box {
     width: 500px;
     height: 600px;
     margin: 0 auto;
@@ -81,23 +80,23 @@ main{
     flex-direction: column;
 }
 
-.form-group {
+.create .form-group {
     margin-bottom: 15px;
 }
 
-label {
+.create label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-input {
+.create input {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
 
-button {
+.create button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -107,7 +106,29 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+.button-box {
+    margin-top: 40px;
+    }
+.create button {
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 27px;
+    font-size: 1.2em;
+    background-color: #3F8FDA;
+    color: #ffffff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 4px 11px 0px rgba(0,0,0,0.2);
 }
+
+.create button:hover {
+    background-color: #3479ba;
+    color: #EEEEEE;
+    -webkit-box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 10px 11px 0px rgba(0,0,0,0.1);
+}
+
 </style>
