@@ -7,19 +7,43 @@ import { ref } from 'vue';
 const matricola = ref('');
 const nomeSquadra = ref('');
 
-function handleLogin() {
+function handleRegistration() {
     console.log('Matricola:', matricola.value);
     console.log('Nome Squadra:', nomeSquadra.value);
-    // Add your login logic here
-}
+    const server_url = "localhost:3000";
+    const request = new XMLHttpRequest();
+    request.open("POST", server_url + "/createTeam", true);
+    const team = {
+        "matricola": matricola.value,
+        "squadra": nomeSquadra.value,
+    }
+	request.setRequestHeader("Content-Type", "application/json");
+	request.send(JSON.stringify(team));
 
+    request.onload = function () {
+		if (request.status === 200) {
+			let res = JSON.parse(request.responseText);
+			console.log(res);
+		} else {
+			console.error("Error Adding Team: " + request.statusText);
+		}
+	};
+
+	request.onerror = function () {
+		console.error("Network error.");
+	};
+
+}
 
 </script>
 <template>
     <StandaloneNavbar bg-color="transparent" />
     <main>
         <div class="login-box">
-            <form @submit.prevent="handleLogin">
+            <div class="">
+                <p></p>
+            </div>
+            <form @submit.prevent="handleRegistration">
                 <div class="form-group">
                     <label for="matricola">Matricola</label>
                     <input type="text" id="matricola" v-model="matricola" required />
