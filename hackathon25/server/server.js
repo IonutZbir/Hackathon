@@ -5,6 +5,8 @@ import { fileURLToPath } from "url";
 import cors from "cors";
 import { faL } from "@fortawesome/free-solid-svg-icons";
 
+
+// IL CODICE PER QUESTO SERVER https://i.imgflip.com/2reqtg.png?a485016
 const app = express();
 const PORT = 3000;
 
@@ -17,28 +19,38 @@ const DATA_FILE = path.join(__dirname, "data.json");
 const matricole = JSON.parse(fs.readFileSync("matricole.json", "utf-8"));
 const squadre = JSON.parse(fs.readFileSync("squadre.json", "utf-8"));
 
-function createURL(){
-    
-}
-
 function checkUserInTeam(matricola){
-    squadre.array.forEach((squadra) => {
-        if ((matricola in squadra.partecipanti)) {
-            throw Error("Lo studente è già registrato in una squadra!");
-        }
-    });
+    
+    squadre.forEach((squadra) => {
+        console.log(squadra.partecipanti)
+        squadra.partecipanti.forEach( (mat) =>{
+                if(mat === matricola)
+                throw Error("Lo studente è già registrato in una squadra!");
+            }
+        )
+    })
     return true;
 }
 
 function checkTeamCode(){
-
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    let code = '';
+    for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * chars.length);
+        code += chars[randomIndex];
+    }
+    if( code in squadre) {
+        return checkTeamCode;
+    }
+    return code;
+    
 }
 
 app.use(express.json());
 
 app.use(cors());
 
-app.post("/createTeam", async (req, res) => {
+app.post("/create_team", async (req, res) => {
 	try {
 		let matricola = req.body.matricola;
 		let nomeSquadra = req.body.squadra;
@@ -47,33 +59,50 @@ app.post("/createTeam", async (req, res) => {
 			`[INFO]: Matricola: ${matricola} - Squadra: ${nomeSquadra}`
 		);
 
+
+        //La matricola non è di 7 cifre o il nome della squadra è più di 15 Caratteri
+        if(matricola.length != 7 || nomeSquadra.length > 15 || nomeSquadra.length < 3){
+            return res.status(400).json({message:"Richiesta non valida"});
+        }
+
+        //Controlla se la matricola è presente tra gli iscritti all'hackathon
 		if (!(matricola in matricole)) {
-            res.status(200).json({message:"Lo studente non è iscritto all'evento"})
+            return res.status(404).json({message:"La matricola fornita non è iscritta all'evento"})
         }
 		
+        //Controlla se la matricola è già presente in una squadra
         try {
 			checkUserInTeam(matricola);
 		} catch (error) {
-			res.status(200).json({message: `${error}`});
+            console.log("Matricola già registrata in una squadra")
+			return res.status(409).json({message: `${error.message}`});
 		}
 
-        // cod: "Axfa01"
+        let code = checkTeamCode();
+		const newData = {
+            id:code,
+            nome_squadra: nomeSquadra,
+            partecipanti: [matricola]
+        };
 
-        // procediamo con la registrazione della squadra
-
-		// const newData = req.body;
-		// await fs.writeFile(DATA_FILE, JSON.stringify(newData, null, 2));
-		res.status(200).json({ message: "Squadra registrata", join_url:${createURL()} });
+        let url = `https://lab25a.it/join_team?${code}`
+		
+        squadre.push(newData);
+        let sq = JSON.stringify(squadre)
+        await fs.writeFile('squadre.json', sq, 'utf8', ()=>{});
+		return res.status(200).json({ message: "Squadra registrata con successo", join_url:url});
 
 	} catch (error) {
 		console.error("Error writing to file", error);
-		res.status(500).json({ message: "Errore: squadra non registrata" });
+		return res.status(500).json({ message: "Errore: Squadra non registrata" });
 	}
 });
 
-app.post("/joinTeam", async (req, res) => {
+app.post("/join_team", async (req, res) => {
+    console.log("BOH")
     try {
-        // link richiesta: https://lab25a.it/joinTeam?codice_squadra=""
+        // link richiesta: https://lab25a.it/join_team?codice_squadra=""
+
 		let matricola = req.body.matricola;
 		let codiceSquadra = req.body.codice_squadra;
     
