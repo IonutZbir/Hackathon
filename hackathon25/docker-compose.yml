@@ -21,7 +21,8 @@ services:
       ports:
         - "3000:3000"
       volumes:
-        - ./server/data.json:/hackathon25/data.json
+        - ./server/squadre.json:/hackathon25/squadre.json
+        - ./server/matricole.json:/hackathon25/matricole.json
 
   certbot:
     image: certbot/certbot:latest
