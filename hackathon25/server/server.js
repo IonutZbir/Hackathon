@@ -32,7 +32,7 @@ function checkUserInTeam(matricola){
     return true;
 }
 
-function checkTeamCode(){
+function createTeamCode(){
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let code = '';
     for (let i = 0; i < 6; i++) {
@@ -78,14 +78,14 @@ app.post("/create_team", async (req, res) => {
 			return res.status(409).json({message: `${error.message}`});
 		}
 
-        let code = checkTeamCode();
+        let code = createTeamCode();
 		const newData = {
             id:code,
             nome_squadra: nomeSquadra,
             partecipanti: [matricola]
         };
 
-        let url = `https://lab25a.it/join_team?${code}`
+        let url = `https://lab25a.it/unisciti?code=${code}`
 		
         squadre.push(newData);
         let sq = JSON.stringify(squadre)
@@ -98,13 +98,55 @@ app.post("/create_team", async (req, res) => {
 	}
 });
 
+app.get("/get_team", async (req, res) => {
+    // link richiesta: https://lab25a.it/join_team?codice_squadra=""
+    
+    // return res.status(404).json({ message: "Errore: squadra non esistente" });
+    const code = req.query.code;
+    if(code === undefined) {
+        return res.status(400).json({ message: "Errore: richiesta invalida" });
+    }
+    console.log(`[INFO]: Codice: ${code}`);
+
+    const team = squadre.find((t) => t.id === code);
+    if(team === undefined) {
+        return res.status(404).json({ message: "Errore: squadra non esistente" });
+    }
+    console.log(`[INFO] ${JSON.stringify(team)}`);
+    return res.status(200).json(team);
+
+   
+});
+
 app.post("/join_team", async (req, res) => {
-    console.log("BOH")
     try {
-        // link richiesta: https://lab25a.it/join_team?codice_squadra=""
+        // link richiesta: https://lab25a.it/join_team?cide=""
 
 		let matricola = req.body.matricola;
-		let codiceSquadra = req.body.codice_squadra;
+		let codiceSquadra = req.body.code;
+        
+        
+        if(matricola.length != 7){
+            return res.status(400).json({message:"Richiesta non valida"});
+        }
+
+        const team = squadre.find((t) => t.id === code);
+        if(team === undefined) {
+            return res.status(404).json({ message: "Errore: squadra non esistente" });
+        }
+
+        //Controlla se la matricola è presente tra gli iscritti all'hackathon
+		if (!(matricola in matricole)) {
+            return res.status(404).json({message:"La matricola fornita non è iscritta all'evento"})
+        }
+		
+        //Controlla se la matricola è già presente in una squadra
+        try {
+			checkUserInTeam(matricola);
+		} catch (error) {
+            console.log("Matricola già registrata in una squadra")
+			return res.status(409).json({message: `${error.message}`});
+		}
     
     }catch(error){
 		console.error("Error writing to file", error);
