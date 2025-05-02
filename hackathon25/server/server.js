@@ -2,6 +2,7 @@ import express from "express";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
@@ -13,6 +14,8 @@ const __dirname = path.dirname(__filename);
 const DATA_FILE = path.join(__dirname, "data.json");
 
 app.use(express.json());
+
+app.use(cors());
 
 app.put("/createTeam", async (req, res) => {
     try {

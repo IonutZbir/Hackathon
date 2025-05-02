@@ -10,15 +10,18 @@ const nomeSquadra = ref('');
 function handleRegistration() {
     console.log('Matricola:', matricola.value);
     console.log('Nome Squadra:', nomeSquadra.value);
-    const server_url = "localhost:3000";
+    const server_url = "http://localhost:3000";
     const request = new XMLHttpRequest();
     request.open("POST", server_url + "/createTeam", true);
     const team = {
         "matricola": matricola.value,
         "squadra": nomeSquadra.value,
     }
-	request.setRequestHeader("Content-Type", "application/json");
-	request.send(JSON.stringify(team));
+
+    request.setRequestHeader("Content-Type", "application/json");
+    request.setRequestHeader("Access-Control-Allow-Origin",  "*");
+
+    request.send(JSON.stringify(team));
 
     request.onload = function () {
 		if (request.status === 200) {
