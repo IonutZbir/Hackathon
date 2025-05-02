@@ -3,8 +3,6 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import cors from "cors";
-import { faL } from "@fortawesome/free-solid-svg-icons";
-
 
 // IL CODICE PER QUESTO SERVER https://i.imgflip.com/2reqtg.png?a485016
 const app = express();
@@ -13,8 +11,6 @@ const PORT = 3000;
 // Manually define __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-const DATA_FILE = path.join(__dirname, "data.json");
 
 const matricole = JSON.parse(fs.readFileSync("matricole.json", "utf-8"));
 const squadre = JSON.parse(fs.readFileSync("squadre.json", "utf-8"));
@@ -43,7 +39,6 @@ function createTeamCode(){
         return checkTeamCode;
     }
     return code;
-    
 }
 
 app.use(express.json());
@@ -114,8 +109,6 @@ app.get("/get_team", async (req, res) => {
     }
     console.log(`[INFO] ${JSON.stringify(team)}`);
     return res.status(200).json(team);
-
-   
 });
 
 app.post("/join_team", async (req, res) => {
@@ -129,10 +122,11 @@ app.post("/join_team", async (req, res) => {
         if(matricola.length != 7){
             return res.status(400).json({message:"Richiesta non valida"});
         }
-
-        const team = squadre.find((t) => t.id === code);
-        if(team === undefined) {
-            return res.status(404).json({ message: "Errore: squadra non esistente" });
+        
+        const team_i = squadre.findIndex((t) => t.id === codiceSquadra);
+        console.log(codiceSquadra, team_i);
+        if(team_i === -1) {
+            return res.status(404).json({ message: "Errore: Squadra non esistente" });
         }
 
         //Controlla se la matricola è presente tra gli iscritti all'hackathon
@@ -147,6 +141,11 @@ app.post("/join_team", async (req, res) => {
             console.log("Matricola già registrata in una squadra")
 			return res.status(409).json({message: `${error.message}`});
 		}
+
+        squadre[team_i].partecipanti.push(matricola);
+        let sq = JSON.stringify(squadre)
+        await fs.writeFile('squadre.json', sq, 'utf8', ()=>{});
+		return res.status(200).json({ message: "Ti sei unito alla squadra con successo!"});
     
     }catch(error){
 		console.error("Error writing to file", error);

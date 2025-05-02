@@ -17,28 +17,28 @@ onMounted(() => {
 
 });
 
-function getInfo(codiceSquadra){
-    const server_url = "http://localhost:3000";
-    const request = new XMLHttpRequest();
-    request.open("GET", server_url + `/get_team?code=${codiceSquadra}`, true);
-    request.setRequestHeader("Content-Type", "application/json");
-    request.send();
+function getInfo(codiceSquadra) {
+  const server_url = "http://localhost:3000";
+  const request = new XMLHttpRequest();
+  request.open("GET", server_url + `/get_team?code=${codiceSquadra}`, true);
+  request.setRequestHeader("Content-Type", "application/json");
+  request.send();
 
-    request.onload = function () {
-        try {
-            const res = JSON.parse(request.responseText || '{}');
-            if (request.status === 200) {
-                squadra.value = res.nome_squadra;
-            } else if (request.status === 404) {
-                errorMessage.value = res.message || 'Squadra non trovata';
-            } else {
-                errorMessage.value = res.message || 'Errore durante la registrazione.';
-            }
-        
-        } catch {
-            errorMessage.value = 'Risposta non valida dal server.';
-        }
+  request.onload = function () {
+    try {
+      const res = JSON.parse(request.responseText || '{}');
+      if (request.status === 200) {
+        squadra.value = res.nome_squadra;
+      } else if (request.status === 404) {
+        errorMessage.value = res.message || 'Squadra non trovata';
+      } else {
+        errorMessage.value = res.message || 'Errore durante la registrazione.';
+      }
+
+    } catch {
+      errorMessage.value = 'Risposta non valida dal server.';
     }
+  }
 
 }
 
@@ -93,19 +93,12 @@ function handleJoin() {
   <div class="join">
     <main>
       <div class="login-box">
-        <form @submit.prevent="handleJoin">
+        <form @submit.prevent="handleJoin" autocomplete="off">
           <h2 class="form-title">Unisciti alla squadra "<strong>{{ squadra }}</strong>"</h2>
 
           <div class="form-group">
             <label for="matricola">Matricola</label>
-            <input
-              type="text"
-              id="matricola"
-              v-model="matricola"
-              maxlength="7"
-              required
-              placeholder="Es. 1234567"
-            />
+            <input type="text" id="matricola" v-model="matricola" maxlength="7" required placeholder="Es. 1234567" />
           </div>
 
           <button type="submit">UNISCITI</button>

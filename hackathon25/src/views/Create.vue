@@ -81,7 +81,7 @@ function copyLink() {
     <div class="create">
       <main>
         <div class="login-box">
-          <form @submit.prevent="handleRegistration">
+          <form @submit.prevent="handleRegistration" autocomplete="off">
             <h2 class="form-title">Crea la tua squadra</h2>
   
             <div class="form-group">
@@ -90,9 +90,10 @@ function copyLink() {
                 type="text"
                 id="nomeSquadra"
                 v-model="nomeSquadra"
-                maxlength="10"
+                maxlength="15"
+                minlength="3"
                 required
-                placeholder="3-10 caratteri"
+                placeholder="3-15 caratteri"
               />
             </div>
   

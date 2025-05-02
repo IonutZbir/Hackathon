@@ -24,11 +24,6 @@
         "nome": "Giacomo",
         "cognome": "Pace"
     },
-    "0365290": {
-        "email": "luciano.lulaj@students.uniroma2.eu",
-        "nome": "Luciano",
-        "cognome": "Lulaj"
-    },
     "0323180": {
         "email": "lorenzo.gaudenzi@students.uniroma2.eu",
         "nome": "Lorenzo",
@@ -48,11 +43,6 @@
         "email": "Cristian.scursatone@students.uniroma2.eu",
         "nome": "Cristian",
         "cognome": "Scursatone"
-    },
-    "0334807": {
-        "email": "marius.craciun@students.uniroma2.eu",
-        "nome": "Marius",
-        "cognome": "Craciun"
     },
     "0362950": {
         "email": "walid.fikry@students.uniroma2.eu",
@@ -366,7 +356,7 @@
     },
     "0327308": {
         "email": "mihaialexandru.sandu@students.uniroma2.eu",
-        "nome": "Ale Il Re ????",
+        "nome": "Alessandro",
         "cognome": "Sandu"
     },
     "0339502": {
@@ -423,5 +413,15 @@
         "email": "ginevra.brugnola@students.uniroma2.eu",
         "nome": "Ginevra",
         "cognome": "Brugnola"
+    },
+    "0327131": {
+        "email": "adriano.porzia@students.uniroma2.eu",
+        "nome": "Adriano",
+        "cognome": "Porzia"
+    },
+    "0331546": {
+        "email": "adriano.porzia@students.uniroma2.eu",
+        "nome": "Emanuela",
+        "cognome": "Tiberi"
     }
 }
