@@ -12,8 +12,8 @@ const PORT = 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const matricole = JSON.parse(fs.readFileSync("matricole.json", "utf-8"));
-const squadre = JSON.parse(fs.readFileSync("squadre.json", "utf-8"));
+const matricole = JSON.parse(fs.readFileSync("students.json", "utf-8"));
+const squadre = JSON.parse(fs.readFileSync("teams.json", "utf-8"));
 
 function checkUserInTeam(matricola){
     
@@ -84,7 +84,7 @@ app.post("/create_team", async (req, res) => {
 		
         squadre.push(newData);
         let sq = JSON.stringify(squadre)
-        await fs.writeFile('squadre.json', sq, 'utf8', ()=>{});
+        await fs.writeFile('teams.json', sq, 'utf8', ()=>{});
 		return res.status(200).json({ message: "Squadra registrata con successo", join_url:url});
 
 	} catch (error) {
@@ -143,7 +143,7 @@ app.post("/join_team", async (req, res) => {
 
         squadre[team_i].partecipanti.push(matricola);
         let sq = JSON.stringify(squadre)
-        await fs.writeFile('squadre.json', sq, 'utf8', ()=>{});
+        await fs.writeFile('teams.json', sq, 'utf8', ()=>{});
 		return res.status(200).json({ message: "Ti sei unito alla squadra con successo!"});
     
     }catch(error){
