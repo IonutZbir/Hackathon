@@ -3,6 +3,8 @@ import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 
+const server_url = "http://localhost:3000";
+  
 const route = useRoute();
 const id_squadra = ref('');
 const squadra = ref('');
@@ -18,7 +20,6 @@ onMounted(() => {
 });
 
 function getInfo(codiceSquadra) {
-  const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
   request.open("GET", server_url + `/teams/${codiceSquadra}`, true);
   request.setRequestHeader("Content-Type", "application/json");
@@ -57,7 +58,6 @@ function handleJoin() {
 
   if (!validateInput()) return;
 
-  const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
   request.open("POST", server_url + "/teams/join", true);
 

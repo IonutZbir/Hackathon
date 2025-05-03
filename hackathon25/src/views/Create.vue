@@ -2,9 +2,12 @@
 import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
 import { ref } from 'vue';
 
+const server_url = "http://localhost:3000";
+
 const matricola = ref('');
 const nomeSquadra = ref('');
 const shareLink = ref('');
+const generated = ref(false)
 const errorMessage = ref('');
 const validationError = ref('');
 const linkCopiato = ref(false);
@@ -27,8 +30,6 @@ function handleRegistration() {
   errorMessage.value = '';
 
   if (!validateInputs()) return;
-
-  const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
   request.open("POST", server_url + "/teams/create", true);
 
@@ -45,6 +46,7 @@ function handleRegistration() {
       const res = JSON.parse(request.responseText || '{}');
       if (request.status === 200 && res.join_url) {
         shareLink.value = res.join_url;
+        generated.value = true;
       } else if (request.status === 409 && res.join_url) {
         errorMessage.value = res.message || 'Hai già un link.';
         shareLink.value = res.join_url;
@@ -109,7 +111,7 @@ function copyLink() {
               />
             </div>
   
-                <button type="submit">CREA SQUADRA</button>
+                <button type="submit" :disabled='generated' >CREA SQUADRA</button>
   
                 <div class="message-section">
                     <div v-if="validationError" class="validation-error">
