@@ -30,7 +30,7 @@ function handleRegistration() {
 
   const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
-  request.open("POST", server_url + "/create_team", true);
+  request.open("POST", server_url + "/teams/create", true);
 
   const team = {
     "matricola": matricola.value,

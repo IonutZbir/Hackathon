@@ -1,11 +1,11 @@
 # TODO
 
 - [] Creare file admin.js
-- [] Creare api.js
-- [] Refactoring SOLO Server
+- [x] Creare API {Still Working}
+- [x] Refactoring SOLO Server
 - [] Visualizzare le squadre
-- [] Creare Pagina 404
-- [] file con variabili ENV, tipo l'indirizzo del server
+- [x] Creare Pagina 404
+- [x] file con variabili ENV, tipo l'indirizzo del server
 - [] redirect nginx
 - [] sistemare il docker
 - [] logging usando Morgan

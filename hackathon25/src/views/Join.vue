@@ -20,7 +20,7 @@ onMounted(() => {
 function getInfo(codiceSquadra) {
   const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
-  request.open("GET", server_url + `/get_team?code=${codiceSquadra}`, true);
+  request.open("GET", server_url + `/teams/${codiceSquadra}`, true);
   request.setRequestHeader("Content-Type", "application/json");
   request.send();
 
@@ -28,7 +28,7 @@ function getInfo(codiceSquadra) {
     try {
       const res = JSON.parse(request.responseText || '{}');
       if (request.status === 200) {
-        squadra.value = res.nome_squadra;
+        squadra.value = res.name;
       } else if (request.status === 404) {
         errorMessage.value = res.message || 'Squadra non trovata';
       } else {
@@ -59,7 +59,7 @@ function handleJoin() {
 
   const server_url = "http://localhost:3000";
   const request = new XMLHttpRequest();
-  request.open("POST", server_url + "/join_team", true);
+  request.open("POST", server_url + "/teams/join", true);
 
   const payload = {
     "matricola": matricola.value,

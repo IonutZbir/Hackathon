@@ -1,0 +1,1 @@
+// qui importiamo tutte le routes, poi in server.js importiamo solo /router che andrà a leggere index.js

@@ -6,6 +6,7 @@ import Teams from '@/views/Teams.vue';
 import Info from '@/views/Info.vue';
 import Join from '@/views/Join.vue';
 import NotFound from '@/views/NotFound.vue';
+import Admin from '@/views/Admin.vue';
 
 const routes = [
   { path: '/', alias: ['/home'], component: Home },
@@ -13,8 +14,9 @@ const routes = [
   { path: '/create', component: Create },
   { path: '/teams', component: Teams },
   { path: '/info', component: Info },
-  { path: '/unisciti', component: Join},
-  // {path: '/:pathMatch(.*)*', component: NotFound }
+  { path: '/join', component: Join},
+  { path: '/admin', component: Admin},
+  {path: '/:pathMatch(.*)*', component: NotFound }
 ];
 
 const router = createRouter({

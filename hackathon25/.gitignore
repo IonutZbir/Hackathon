@@ -29,3 +29,5 @@ coverage
 
 *.tsbuildinfo
 certbot
+
+.env
