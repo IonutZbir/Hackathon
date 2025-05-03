@@ -36,7 +36,7 @@ function createTeamCode(){
         code += chars[randomIndex];
     }
     if( code in squadre) {
-        return checkTeamCode;
+        return createTeamCode();
     }
     return code;
 }
@@ -117,7 +117,6 @@ app.post("/join_team", async (req, res) => {
 
 		let matricola = req.body.matricola;
 		let codiceSquadra = req.body.code;
-        
         
         if(matricola.length != 7){
             return res.status(400).json({message:"Richiesta non valida"});
