@@ -153,5 +153,5 @@ app.post("/join_team", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-	console.log(`Backend server: http://localhost:${PORT}`);
+	console.log(`Backend server avviato sulla porta: ${PORT}`);
 });

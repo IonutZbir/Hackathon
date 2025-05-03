@@ -14,7 +14,7 @@ const routes = [
   { path: '/teams', component: Teams },
   { path: '/info', component: Info },
   { path: '/unisciti', component: Join},
-  // {path: '/:pathMatch(.*)*', component: NotFound }
+  {path: '/:pathMatch(.*)*', component: NotFound }
 ];
 
 const router = createRouter({
