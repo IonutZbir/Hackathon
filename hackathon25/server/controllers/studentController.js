@@ -24,14 +24,14 @@ export async function addStudentsFromFile() {
 	}
 }
 
-// GET /students
+// GET /api/students
 
 export async function getStudents(req, res) {
 	const students = await Student.find();
 	res.json(students);
 }
 
-// GET /students/:id
+// GET /api/students/:id
 
 export async function getStudentById(req, res) {
 	const id = req.params.id;

@@ -31,7 +31,7 @@ function handleRegistration() {
 
   if (!validateInputs()) return;
   const request = new XMLHttpRequest();
-  request.open("POST", server_url + "/teams/create", true);
+  request.open("POST", server_url + "/api/teams/create", true);
 
   const team = {
     "matricola": matricola.value,

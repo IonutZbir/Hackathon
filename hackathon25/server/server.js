@@ -21,8 +21,8 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 app.use(cors());
-app.use('/students', studentRoutes);
-app.use('/teams', teamRoutes);
+app.use('/api/students', studentRoutes);
+app.use('/api/teams', teamRoutes);
 
 app.listen(PORT, () => {
 	console.log(`[INFO]: Backend server: http://localhost:${PORT}`);

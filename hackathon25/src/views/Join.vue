@@ -21,7 +21,7 @@ onMounted(() => {
 
 function getInfo(codiceSquadra) {
   const request = new XMLHttpRequest();
-  request.open("GET", server_url + `/teams/${codiceSquadra}`, true);
+  request.open("GET", server_url + `/api/teams/${codiceSquadra}`, true);
   request.setRequestHeader("Content-Type", "application/json");
   request.send();
 
@@ -59,7 +59,7 @@ function handleJoin() {
   if (!validateInput()) return;
 
   const request = new XMLHttpRequest();
-  request.open("POST", server_url + "/teams/join", true);
+  request.open("POST", server_url + "/api/teams/join", true);
 
   const payload = {
     "matricola": matricola.value,

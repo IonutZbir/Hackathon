@@ -3,14 +3,14 @@
 import Student from "../models/student.js";
 import Team from "../models/team.js";
 
-// GET /teams
+// GET /api/teams
 
 export async function getTeams(req, res) {
 	const teams = await Team.find();
 	res.json(teams);
 }
 
-// GET /teams/?code=
+// GET /api/teams/?code=
 
 export async function getTeamById(req, res) {
 	const code = req.params.code;
@@ -27,7 +27,7 @@ export async function getTeamById(req, res) {
 	}
 }
 
-// POST /teams/create
+// POST /api/teams/create
 
 export async function createTeam(req, res) {
 	const studentId = req.body.matricola;
@@ -84,7 +84,7 @@ export async function createTeam(req, res) {
 		.json({ message: "Squadra registrata con successo", join_url: link });
 }
 
-// POST /join
+// POST /api/join
 
 export async function joinTeam(req, res) {
 	let studentId = req.body.matricola;
