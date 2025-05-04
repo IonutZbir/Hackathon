@@ -3,7 +3,7 @@ import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 
-const server_url = "http://localhost:3000";
+const server_url = "https://lab25a.it";
   
 const route = useRoute();
 const id_squadra = ref('');

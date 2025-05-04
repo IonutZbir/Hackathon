@@ -2,7 +2,7 @@
 import StandaloneNavbar from '@/components/nav/StandaloneNavbar.vue';
 import { ref } from 'vue';
 
-const server_url = "http://localhost:3000";
+const server_url = "https://lab25a.it";
 
 const matricola = ref('');
 const nomeSquadra = ref('');
