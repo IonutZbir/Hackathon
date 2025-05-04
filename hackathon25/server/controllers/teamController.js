@@ -6,9 +6,21 @@ import Team from "../models/team.js";
 // GET /api/teams
 
 export async function getTeams(req, res) {
-	const teams = await Team.find();
-	res.json(teams);
-}
+	try {
+	  const teams = await Team.find().populate('members');
+  
+	  const formatted = teams.map(team => ({
+		_id: team._id,
+		name: team.name,
+		members: team.members.map(m => `${m.name} ${m.surname}`)
+	  }));
+  
+	  res.json(formatted);
+	} catch (err) {
+	  res.status(500).json({ message: 'Error fetching teams', error: err });
+	}
+  }
+  
 
 // GET /api/teams/?code=
 
