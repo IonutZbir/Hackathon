@@ -78,7 +78,7 @@ export async function createTeam(req, res) {
 	});
 	await newTeam.save();
 
-	let link = process.env.CLIENT_IP + `/join?code=${code}`;
+	let link = process.env.SERVER_IP + `/join?code=${code}`;
 	return res
 		.status(200)
 		.json({ message: "Squadra registrata con successo", join_url: link });

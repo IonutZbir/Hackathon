@@ -11,7 +11,9 @@ services:
       - ./certbot/www/:/var/www/certbot/:ro
       - ./certbot/conf/:/etc/letsencrypt/:rw
     #   - ./etc/:/etc/letsencrypt/ ATTIVARE PER LA GENERAZIONE DEI CERTIFICATI
-    
+    depends_on:
+      - backend
+
   backend:
       build:
         context: .
