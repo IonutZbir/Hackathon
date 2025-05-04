@@ -21,11 +21,26 @@ services:
       ports:
         - "3000:3000"
       volumes:
-        - ./server/teams.json:/hackathon25/teams.json
-        - ./server/students.json:/hackathon25/students.json
-
+        - ./server/data/teams.json:/hackathon25/server/data/teams.json
+        - ./server/data/students.json:/hackathon25/server/data/students.json
+      depends_on:
+        - mongodb
+      environment:
+          - MONGODB_URI=mongodb://mongodb:27017/hackathon
+  
+  mongodb:
+      image: mongo:latest
+      container_name: mongodb
+      ports:
+        - "27017:27017"
+      volumes:
+        - /server/db :/data/db
+        - ./mongodb/init/:/docker-entrypoint-initdb.d/
+  
   certbot:
     image: certbot/certbot:latest
+    profiles:
+      - certgen  #Per edeguire certbot specificare --profile certgen
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
