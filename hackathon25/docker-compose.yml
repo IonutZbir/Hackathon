@@ -36,8 +36,8 @@ services:
       ports:
         - "27017:27017"
       volumes:
-        - /server/db :/data/db
-        - /mongodb/init/:/docker-entrypoint-initdb.d/
+        - ./server/db:/data/db
+        - ./mongodb/init/:/docker-entrypoint-initdb.d/
   
   certbot:
     image: certbot/certbot:latest
