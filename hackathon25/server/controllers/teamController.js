@@ -59,7 +59,7 @@ export async function createTeam(req, res) {
 	if (!student) {
 		return res.status(404).json({
 			message:
-				"Lo studente con la matricola fornita non è iscritta all'evento",
+				"Lo studente con la matricola fornita non è iscritto all'evento",
 		});
 	}
 
@@ -102,7 +102,7 @@ export async function joinTeam(req, res) {
 	if (!student) {
 		return res.status(404).json({
 			message:
-				"Lo studente con la matricola fornita non è iscritta all'evento",
+				"Lo studente con la matricola fornita non è iscritto all'evento",
 		});
 	}
 
