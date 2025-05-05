@@ -4217,7 +4217,6 @@ input[type="button"].btn-block {
   right: 0;
   margin: auto;
   width: 50%;
-  height: 25vh;
   z-index: 1;
 
   -ms-flex-preferred-size: 100%;
